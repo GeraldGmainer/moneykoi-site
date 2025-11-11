@@ -43,7 +43,7 @@
           </a>
         </div>
 
-        <p class="mt-5 text-xs text-slate-500">Ich antworte in der Regel zeitnah.</p>
+        <p class="mt-5 text-xs text-slate-500">Ich melde mich schnellstmöglich</p>
       </div>
     </div>
   </main>

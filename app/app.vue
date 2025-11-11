@@ -15,7 +15,8 @@ useHead({
   ],
   htmlAttrs: {
     lang: 'en'
-  }
+  },
+  titleTemplate: (title) => (title ? `Money Koi | ${title}` : 'Money Koi')
 })
 
 useSeoMeta({
