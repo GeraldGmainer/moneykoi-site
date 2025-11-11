@@ -1,15 +1,17 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 const colorMode = useColorMode()
 
 const color = computed(() => colorMode.value === 'dark' ? '#171717' : 'white')
 
+import {Analytics} from '@vercel/analytics/nuxt';
+
 useHead({
   meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { key: 'theme-color', name: 'theme-color', content: color }
+    {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+    {key: 'theme-color', name: 'theme-color', content: color}
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    {rel: 'icon', type: 'image/png', href: '/logos/logo.png'}
   ],
   htmlAttrs: {
     lang: 'en'
@@ -25,12 +27,13 @@ useSeoMeta({
 
 <template>
   <UApp :toaster="{ expand: false }">
-    <AppHeader />
+    <Analytics/>
+    <AppHeader/>
 
     <UMain>
-      <NuxtPage />
+      <NuxtPage/>
     </UMain>
 
-    <AppFooter />
+    <AppFooter/>
   </UApp>
 </template>

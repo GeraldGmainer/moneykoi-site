@@ -1,68 +1,19 @@
-<script setup lang="ts">
-const nuxtApp = useNuxtApp()
-const { activeHeadings, updateHeadings } = useScrollspy()
-
-const items = computed(() => [{
-  label: 'Features',
-  to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
-}, {
-  label: 'Pricing',
-  to: '#pricing',
-  active: activeHeadings.value.includes('pricing')
-}, {
-  label: 'Testimonials',
-  to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
-}])
-
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#pricing'),
-    document.querySelector('#testimonials')
-  ].filter(Boolean) as Element[])
-})
-</script>
-
 <template>
-  <UHeader>
-    <template #left>
-      <NuxtLink to="/">
-        <AppLogo class="w-auto h-6 shrink-0" />
+  <header class="sticky top-0 z-20 border-b border-orange-50 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <NuxtLink aria-label="Zur Startseite" class="inline-flex items-center gap-3 cursor-pointer" to="/">
+        <img alt="Money Koi logo" class="h-25 w-25 pointer-events-none" src="/logos/logo.png"/>
+        <span class="text-xl font-semibold tracking-tight sm:text-2xl text-slate-900">Money Koi</span>
       </NuxtLink>
 
-      <TemplateMenu />
-    </template>
-
-    <template #right>
-      <UNavigationMenu
-        :items="items"
-        variant="link"
-        class="hidden lg:block"
-      />
-
-      <UButton
-        label="Download App"
-        variant="subtle"
-        class="hidden lg:block"
-      />
-
-      <UColorModeButton />
-    </template>
-
-    <template #body>
-      <UNavigationMenu
-        :items="items"
-        orientation="vertical"
-        class="-mx-2.5"
-      />
-      <UButton
-        class="mt-4"
-        label="Download App"
-        variant="subtle"
-        block
-      />
-    </template>
-  </UHeader>
+      <nav class="hidden gap-8 text-base font-medium text-slate-600 sm:flex">
+        <NuxtLink class="cursor-pointer transition hover:text-slate-900" to="/features">Funktionen</NuxtLink>
+        <NuxtLink class="cursor-pointer transition hover:text-slate-900" to="/roadmap">Roadmap</NuxtLink>
+        <NuxtLink class="cursor-pointer transition hover:text-slate-900" to="/contact">Kontakt</NuxtLink>
+      </nav>
+    </div>
+  </header>
 </template>
+
+<script lang="ts" setup>
+</script>
