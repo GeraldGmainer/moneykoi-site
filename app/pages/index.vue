@@ -88,190 +88,117 @@
           class="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-b from-transparent to-[#FFFDF8]"></div>
     </section>
 
-    <section id="features" class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
-      <div
-          class="absolute inset-x-0 top-0 -z-10 h-72 bg-[radial-gradient(800px_200px_at_50%_0%,#FFECDC_0%,transparent_70%)]"></div>
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400 opacity-0 translate-y-4 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-             data-reveal>
-            Für dich gestaltet
-          </p>
-          <div class="mt-3 flex flex-col items-center">
-            <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl opacity-0 translate-y-4 transition-all duration-700 delay-100 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-                data-reveal>
-              Klarheit über dein Geld, sonst nichts
-            </h2>
-            <div class="mt-4 h-[3px] w-14 rounded-full bg-[#FF6F3D] animate-grow"></div>
-          </div>
+    <section>
+      <div class="text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400 opacity-0 translate-y-4 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
+           data-reveal>
+          Für dich gestaltet
+        </p>
+        <div class="mt-3 flex flex-col items-center">
+          <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl opacity-0 translate-y-4 transition-all duration-700 delay-100 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
+              data-reveal>
+            Klarheit über dein Geld
+          </h2>
+          <div class="mt-4 h-[3px] w-14 rounded-full bg-[#FF6F3D] animate-grow"></div>
         </div>
+      </div>
+    </section>
 
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <div
-              class="feature-card flex flex-col rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/80 opacity-0 translate-y-6 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-              data-reveal
-          >
-            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFE4D5] text-[#FF6F3D]">
-              <span class="text-lg">📘</span>
-            </div>
-            <h3 class="text-base font-semibold text-slate-900">Einfaches Haushaltsbuch</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Behalte deine Einnahmen und Ausgaben mühelos im Blick. Klar strukturiert, schnell zu bedienen und ganz
-              ohne komplizierte Menüs.
-            </p>
-          </div>
-
-          <div
-              class="feature-card flex flex-col rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/80 opacity-0 translate-y-6 transition-all duration-700 delay-100 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-              data-reveal
-          >
-            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFE8DB] text-[#FF6F3D]">
+    <section>
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="group rounded-3xl border border-orange-100 bg-white/80 p-6 text-center shadow-sm shadow-orange-50/80 transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="mx-auto mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFE4D5] text-[#FF6F3D]">
               <span class="text-lg">⚡️</span>
             </div>
-            <h3 class="text-base font-semibold text-slate-900">Offline & blitzschnell</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Money Koi funktioniert komplett offline – deine Daten bleiben auf deinem Gerät und alles reagiert sofort,
-              ohne Wartezeiten.
-            </p>
+            <h3 class="text-base font-semibold text-slate-900">Sofort & Offline</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Ohne Wartezeiten, auch ohne Verbindung. Immer bereit für den nächsten Eintrag.</p>
           </div>
 
-          <div
-              class="feature-card flex flex-col rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/80 opacity-0 translate-y-6 transition-all duration-700 delay-200 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-              data-reveal
-          >
-            <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFEBDD] text-[#FF6F3D]">
-              <span class="text-lg">🎨</span>
+          <div class="group rounded-3xl border border-orange-100 bg-white/80 p-6 text-center shadow-sm shadow-orange-50/80 transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="mx-auto mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFE8DB] text-[#FF6F3D]">
+              <span class="text-lg">🎯</span>
             </div>
-            <h3 class="text-base font-semibold text-slate-900">Klar & liebevoll gestaltet</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Ein ruhiges, modernes Design mit Fokus auf Übersicht und Balance. Entwickelt, um dich im Alltag zu
-              unterstützen – nicht zu stressen.
-            </p>
+            <h3 class="text-base font-semibold text-slate-900">Klarer Fokus</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Nur die Kennzahlen, die wirklich zählen. Kein Ballast, kein Stress.</p>
+          </div>
+
+          <div class="group rounded-3xl border border-orange-100 bg-white/80 p-6 text-center shadow-sm shadow-orange-50/80 transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="mx-auto mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFEBDD] text-[#FF6F3D]">
+              <span class="text-lg">🌿</span>
+            </div>
+            <h3 class="text-base font-semibold text-slate-900">Ruhiges Design</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Wärme, Balance, Lesbarkeit. Gestaltung, die dich runterbringt.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="screenshots" class="border-b border-orange-50 bg-[#FFF6EB]">
-      <div class="mx-auto max-w-6xl px-4 py-32 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400 opacity-0 translate-y-4 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-             data-reveal>
-            Schön & funktional
-          </p>
-          <h2 class="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl opacity-0 translate-y-4 transition-all duration-700 delay-100 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-              data-reveal>
-            Screens, die dir nicht im Weg stehen
-          </h2>
-          <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 opacity-0 translate-y-4 transition-all duration-700 delay-200 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-             data-reveal>
-            Jeder Screen ist so gestaltet, dass du ruhig und konzentriert mit deinem Geld umgehen kannst – ohne unnötige
-            Ablenkung.
-          </p>
-        </div>
+    <section>
+      <div class="text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400" data-reveal>
+          Schön & funktional
+        </p>
+        <h2 class="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl" data-reveal>
+          Platz für das Wesentliche
+        </h2>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-600" data-reveal>
+          Jede Ansicht ist so gestaltet, dass du ruhig und fokussiert bleibst: klare Hierarchien, gute Lesbarkeit
+          und keine Ablenkungen. So triffst du Entscheidungen mit einem Blick.
+        </p>
+      </div>
+    </section>
 
-        <div class="mt-12 space-y-16">
-          <div class="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center">
-            <div
-                class="flex justify-center lg:justify-start opacity-0 -translate-y-3 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-                data-reveal>
-              <img
-                  alt="Startübersicht Screenshot"
-                  class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.1] transition-transform duration-500 will-change-transform"
-                  src="/images/screen2.png"
-              />
-            </div>
-            <div
-                class="opacity-0 translate-y-4 transition-all duration-700 delay-150 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-                data-reveal>
-              <h3 class="text-xl lg:text-2xl font-semibold text-slate-900">Überblick</h3>
-              <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
-                Alles Wichtige auf einen Blick. Sieh, wie sich dein Monat entwickelt, welche Kategorien gerade zählen
-                und wo noch Spielraum ist – ruhig, klar, ohne Ablenkung.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center">
-            <div
-                class="order-2 lg:order-1 opacity-0 translate-y-4 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-                data-reveal>
-              <h3 class="text-xl lg:text-2xl font-semibold text-slate-900">Deine Buchungen</h3>
-              <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
-                Deine täglichen Buchungen, sauber sortiert. Suchfunktion, Bearbeiten und Kategorien greifen ineinander,
-                damit nichts hängen bleibt.
-              </p>
-            </div>
-
-            <div
-                class="order-1 flex justify-center lg:order-2 lg:justify-end opacity-0 -translate-y-3 transition-all duration-700 delay-150 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-                data-reveal>
-              <img
-                  alt="Buchungsliste Screenshot"
-                  class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.1] transition-transform duration-500 will-change-transform"
-                  src="/images/screen3.png"
-              />
-            </div>
-          </div>
-        </div>
-
-
-        <!-- NEW: Customization (between video and screen3) -->
-        <div class="mt-16 grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center">
-          <div class="flex justify-center lg:justify-start opacity-0 translate-y-4 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <img
-                alt="Kategorien mit Unterkategorien"
-                class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)]"
-                src="/images/screen4.png"
-            />
-          </div>
-
-          <div class="opacity-0 translate-y-4 transition-all duration-700 delay-150 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <h3 class="text-xl lg:text-2xl font-semibold text-slate-900">Anpassbar</h3>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
-              Richte die App so ein, wie du denkst: eigene Konten, klare Haupt- und Unterkategorien, passende Icons und Reihenfolge.
-              So bleibt die Übersicht genau auf deine Gewohnheiten zugeschnitten.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center mt-16">
+    <section id="warum" class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
+      <div class="absolute inset-x-0 top-0 -z-10 h-72 bg-[radial-gradient(900px_220px_at_50%_0%,#FFECDC_0%,transparent_70%)]"></div>
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:px-8">
+        <div class="order-1 flex justify-center lg:justify-end">
           <div
-              class="opacity-0 translate-y-4 transition-all duration-700 delay-150 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
+              class="relative opacity-0 translate-y-4 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
               data-reveal>
-            <h3 class="text-xl lg:text-2xl font-semibold text-slate-900">
-              Warum ein Haushaltsbuch
-            </h3>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
-              Ein Haushaltsbuch zeigt klar, wohin dein Geld fließt. Wenn alles an einem ruhigen Ort steht, triffst du
-              Entscheidungen auf Basis von Fakten statt Bauchgefühl.
-            </p>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
-              Das senkt Stress, macht kleine Gewohnheiten sichtbar und hilft dir, besser für Ersparnisse, Investitionen
-              oder größere Ausgaben zu planen.
-            </p>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
-              MoneyKoi ist die einfache, moderne Variante des Papier-Haushaltsbuchs: immer dabei, offline nutzbar und
-              darauf fokussiert, Monat für Monat bessere Gewohnheiten aufzubauen.
-            </p>
+            <video
+                autoplay
+                class="block max-h-[720px] rounded-4xl shadow-2xl "
+                loop
+                muted
+                playsinline
+                src="/videos/moneykoi_demo.mp4"
+            ></video>
+            <div class="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-white/30"></div>
           </div>
+        </div>
 
-          <div class="flex justify-center lg:justify-start">
-            <div
-                class="relative opacity-0 translate-y-4 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-                data-reveal>
-              <video
-                  autoplay
-                  class="block max-h-[720px] rounded-4xl shadow-2xl "
-                  loop
-                  muted
-                  playsinline
-                  src="/videos/moneykoi_demo.mp4"
-              ></video>
-              <div class="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-white/30"></div>
-            </div>
-          </div>
+        <div class="order-2 opacity-0 translate-y-4 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">Warum ein Haushaltsbuch</p>
+          <h2 class="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">Klarheit statt Bauchgefühl</h2>
+          <p class="mt-3 text-base leading-7 lg:text-lg lg:leading-8 text-slate-600 max-w-prose">
+            Wenn alles an einem ruhigen Ort steht, werden Muster sichtbar: Wo Geld hinfließt, was wichtig ist und wo Luft bleibt. Das senkt Stress und macht bessere Entscheidungen leicht.
+          </p>
+          <ul class="mt-5 list-disc gap-5 pl-8 text-sm text-slate-700">
+            <li class="my-4">Monat verstehen statt raten</li>
+            <li class="my-4">Prioritäten schärfen</li>
+            <li class="my-4">Ziele gelassen erreichen</li>
+          </ul>
+          <p class="mt-6 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">
+            MoneyKoi ist die einfache, moderne Variante des Papier-Haushaltsbuchs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="text-center">
+        <p class="text-m font-semibold uppercase tracking-[0.25em] text-orange-400">bereit?</p>
+        <p class="mt-6 text-sm leading-relaxed text-slate-600">
+          Wenn du sehen willst, wie sich das im Alltag anfühlt, wirf einen Blick auf die wichtigsten Funktionen.
+        </p>
+        <div class="my-6">
+          <NuxtLink
+              class="inline-flex items-center justify-center rounded-full bg-[#FF6F3D] px-6 py-2.5 text-sm font-semibold text-white shadow-sm shadow-orange-200/70 transition hover:-translate-y-0.5 hover:shadow-lg active:translate-y-px"
+              to="/features"
+          >
+            Funktionen ansehen
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -281,23 +208,19 @@
 <script setup>
 definePageMeta({
   title: 'Money Koi – Ruhiges, Offline-Haushaltsbuch.',
-  description:
-      'Money Koi ist ein ruhiges, offline-first Haushaltsbuch aus Flutter. Verfolge Ausgaben, sieh monatliche Übersichten und behalte deine Finanzen ohne Lärm im Griff.'
+  description: 'Money Koi ist ein ruhiges, offline-first Haushaltsbuch. Weniger Lärm, mehr Balance.'
 })
 
 const observe = () => {
   const els = document.querySelectorAll('[data-reveal]')
-  const io = new IntersectionObserver(
-      entries => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            e.target.setAttribute('data-inview', 'true')
-            io.unobserve(e.target)
-          }
-        }
-      },
-      {threshold: 0.2}
-  )
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        e.target.setAttribute('data-inview', 'true')
+        io.unobserve(e.target)
+      }
+    }
+  }, {threshold: 0.2})
   els.forEach(el => io.observe(el))
 }
 
@@ -314,7 +237,7 @@ const tilt = () => {
     const ry = (px * max).toFixed(2)
     if (raf) cancelAnimationFrame(raf)
     raf = requestAnimationFrame(() => {
-      card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`
+      card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`
     })
   }
   const reset = () => {
@@ -353,46 +276,12 @@ onMounted(() => {
   }
 }
 
-@keyframes grow {
-  0% {
-    transform: scaleX(0);
-    opacity: .4
-  }
-  100% {
-    transform: scaleX(1);
-    opacity: 1
-  }
-}
-
 .animate-shimmer {
   background-size: 200% 100%;
-  animation: shimmer 3.5s ease-in-out infinite;
+  animation: shimmer 3.5s ease-in-out infinite
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-grow {
-  transform-origin: left;
-  animation: grow .9s ease-out both .2s;
-}
-
-.feature-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 50px rgba(255, 111, 61, 0.14);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.animate-cta {
-  box-shadow: 0 10px 24px rgba(255, 111, 61, 0.25);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-shimmer,
-  .animate-float,
-  .animate-grow {
-    animation: none
-  }
+  animation: float 6s ease-in-out infinite
 }
 </style>
