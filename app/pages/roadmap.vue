@@ -7,16 +7,16 @@
     </div>
 
     <PageHeader
-        eyebrow="Roadmap"
-        title="Money Koi entwickelt"
-        subtitle="Die wichtigsten Schritte zuerst. Reihenfolge kann sich ändern – Qualität vor Geschwindigkeit."
         :blob="true"
         :border="true"
         align="left"
+        eyebrow="Roadmap"
+        subtitle="Die wichtigsten Schritte zuerst. Reihenfolge kann sich ändern – Qualität vor Geschwindigkeit."
+        title="Money Koi entwickelt"
     />
 
     <section class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl px-4 py-4 lg:py-16 sm:px-6 lg:px-8">
         <h2 class="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Phase 1 · Fokus & Basis</h2>
         <p class="mt-2 text-sm leading-relaxed text-slate-600 lg:text-base">Essentials für Familiennutzung und
           eindeutige Ziele.</p>
@@ -122,7 +122,7 @@
     </section>
 
     <section class="border-b border-orange-50 bg-[#FFF6EB]">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl px-4 py-4 lg:py-16 sm:px-6 lg:px-8">
         <h2 class="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Phase 2 · Komfort & Effizienz</h2>
         <p class="mt-2 text-sm leading-relaxed text-slate-600 lg:text-base">Schneller erfassen, besser auswerten,
           bequemer arbeiten.</p>
@@ -198,7 +198,7 @@
     </section>
 
     <section class="bg-gradient-to-b from-[#FFF6EB] to-[#FFF1E0]">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-4 lg:py-16">
         <h2 class="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Phase 3 · Vorausblick & Extras</h2>
         <p class="mt-2 text-sm leading-relaxed text-slate-600 lg:text-base">Intelligenz und Motivation – später, wenn
           die Basis sitzt.</p>
@@ -285,6 +285,6 @@ definePageMeta({
   title: 'Roadmap',
   description: 'Die geplanten Funktionen von Money Koi: Prioritäten, Phasen und Ausblick.'
 })
-useHead({ title: 'Roadmap' })
+useHead({title: 'Roadmap'})
 </script>
 

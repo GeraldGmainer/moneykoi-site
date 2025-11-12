@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8 mt-8">
+    <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8 lg:mt-8">
       <div class="mx-auto w-full max-w-xl rounded-3xl border border-orange-100 bg-white/90 p-8 sm:p-10 text-center shadow-sm shadow-orange-50/70">
         <div class="mx-auto aspect-square h-36 w-36 overflow-hidden rounded-full ring-4 ring-white sm:h-40 sm:w-40">
           <img alt="Profilfoto" class="h-full w-full object-cover" src="/images/profile.png"/>

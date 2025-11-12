@@ -17,7 +17,7 @@
 
     <section class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
       <div class="absolute inset-x-0 -top-10 -z-10 h-72 bg-[radial-gradient(900px_220px_at_50%_0%,#FFECDC_0%,transparent_70%)]"></div>
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl px-4 py-4 lg:py-16 sm:px-6 lg:px-8">
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div
               class="feature-card group rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/80 opacity-0 translate-y-6 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
