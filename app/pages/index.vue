@@ -9,7 +9,7 @@
       </div>
 
       <div
-          class="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-16 sm:px-6 lg:flex-row lg:items-start lg:pt-6 lg:pb-12 lg:px-8"
+          class="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-16 sm:px-6 lg:flex-row lg:items-start lg:px-8"
       >
         <div class="flex-3 text-center lg:text-left">
           <p class="mt-2 text-sm font-medium uppercase tracking-[0.25em] text-slate-500 lg:pt-12 opacity-0 translate-y-4 will-change-transform transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
@@ -153,7 +153,7 @@
     </section>
 
     <section id="screenshots" class="border-b border-orange-50 bg-[#FFF6EB]">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl px-4 py-32 sm:px-6 lg:px-8">
         <div class="text-center">
           <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400 opacity-0 translate-y-4 transition-all duration-700 ease-out data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
              data-reveal>

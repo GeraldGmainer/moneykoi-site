@@ -1,40 +1,36 @@
-<script lang="ts" setup>
-const colorMode = useColorMode()
+<script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
 
-const color = computed(() => colorMode.value === 'dark' ? '#171717' : 'white')
-
-import {Analytics} from '@vercel/analytics/nuxt';
+const color = computed(() => 'white')
 
 useHead({
   meta: [
-    {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-    {key: 'theme-color', name: 'theme-color', content: color}
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { key: 'theme-color', name: 'theme-color', content: color }
   ],
-  link: [
-    {rel: 'icon', type: 'image/png', href: '/logos/logo.png'}
-  ],
-  htmlAttrs: {
-    lang: 'en'
+  link: [{ rel: 'icon', type: 'image/png', href: '/logos/logo.png' }],
+  htmlAttrs: { lang: 'de' },
+  bodyAttrs: {
+    class: 'min-h-[100svh] bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB] text-slate-900 overflow-x-hidden'
   },
-  titleTemplate: (title) => (title ? `Money Koi | ${title}` : 'Money Koi')
+  titleTemplate: t => (t ? `Money Koi | ${t}` : 'Money Koi')
 })
 
 useSeoMeta({
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/landing-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/landing-light.png',
+  ogImage: '/social/og.png',
+  twitterImage: '/social/og.png',
   twitterCard: 'summary_large_image'
 })
 </script>
 
 <template>
-  <UApp :toaster="{ expand: false }">
-    <Analytics/>
-    <AppHeader/>
-
-    <UMain>
-      <NuxtPage/>
-    </UMain>
-
-    <AppFooter/>
-  </UApp>
+  <div class="min-h-[100svh] flex flex-col" style="--app-header:128px; --app-footer:56px;">
+    <AppHeader />
+    <main class="flex-1 pt-[var(--app-header)] min-h-[calc(100svh-var(--app-header)-var(--app-footer))]">
+      <NuxtPage />
+    </main>
+    <div class="mt-auto">
+      <AppFooter />
+    </div>
+  </div>
 </template>

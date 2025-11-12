@@ -1,18 +1,21 @@
 <template>
-  <main class="min-h-screen bg-[#FFFDF8] text-slate-900">
-    <section class="border-b border-orange-50">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <p class="mt-2 text-sm font-medium uppercase tracking-[0.25em] text-slate-500">Roadmap</p>
-          <h1 class="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Wohin sich
-            Money Koi entwickelt</h1>
-          <p class="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 lg:text-base">Die wichtigsten Schritte
-            zuerst. Reihenfolge kann sich ändern – Qualität vor Geschwindigkeit.</p>
-        </div>
+  <main class="relative bg-[#FFFDF8] text-slate-900 overflow-x-clip">
+    <div class="pointer-events-none absolute inset-0 -z-10">
+      <div class="mx-auto h-[35vh] max-w-6xl blur-2xl">
+        <div class="mx-6 mt-10 h-full rounded-[40px] bg-[radial-gradient(1200px_500px_at_50%_-20%,#FFE6D7_0%,transparent_60%)]"></div>
       </div>
-    </section>
+    </div>
 
-    <section class="border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
+    <PageHeader
+        eyebrow="Roadmap"
+        title="Money Koi entwickelt"
+        subtitle="Die wichtigsten Schritte zuerst. Reihenfolge kann sich ändern – Qualität vor Geschwindigkeit."
+        :blob="true"
+        :border="true"
+        align="left"
+    />
+
+    <section class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
       <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <h2 class="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Phase 1 · Fokus & Basis</h2>
         <p class="mt-2 text-sm leading-relaxed text-slate-600 lg:text-base">Essentials für Familiennutzung und
@@ -279,7 +282,9 @@
 
 <script setup>
 definePageMeta({
-  title: 'Money Koi – Roadmap',
+  title: 'Roadmap',
   description: 'Die geplanten Funktionen von Money Koi: Prioritäten, Phasen und Ausblick.'
 })
+useHead({ title: 'Roadmap' })
 </script>
+

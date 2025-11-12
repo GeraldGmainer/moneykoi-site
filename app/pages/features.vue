@@ -6,20 +6,14 @@
       </div>
     </div>
 
-    <header class="border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400 opacity-0 translate-y-4 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-          Funktionen
-        </p>
-        <h1 class="mt-3 text-3xl font-semibold tracking-tight sm:text-5xl opacity-0 translate-y-4 transition-all duration-700 delay-100 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-          Mehr Klarheit. Mehr Ruhe.
-        </h1>
-        <p class="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 lg:text-base opacity-0 translate-y-4 transition-all duration-700 delay-200 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0"
-           data-reveal>
-          Ein Haushaltsbuch, das sich deinem System anpasst – mit klarer Struktur, sinnvollen Analysen und automatischer Synchronisation.
-        </p>
-      </div>
-    </header>
+    <PageHeader
+      eyebrow="Funktionen"
+      title="Mehr Klarheit. Mehr Ruhe."
+      subtitle="Ein Haushaltsbuch, das sich deinem System anpasst – mit klarer Struktur, sinnvollen Analysen und automatischer Synchronisation."
+      :blob="true"
+      :border="true"
+      align="left"
+    />
 
     <section class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
       <div class="absolute inset-x-0 -top-10 -z-10 h-72 bg-[radial-gradient(900px_220px_at_50%_0%,#FFECDC_0%,transparent_70%)]"></div>
@@ -133,12 +127,11 @@
               <li>Gesamtsaldo</li>
               <li>Cashflow</li>
               <li>Top-Ausgaben</li>
-              <li>Saldo-Timeline</li>
+              <li>Saldo-Zeitlauf</li>
               <li>Neueste Transaktionen</li>
-              <li>Trend-Timeline</li>
+              <li>Saldo-Trend</li>
             </ul>
             <ul class="mt-4 grid list-disc gap-2 pl-5 text-sm text-slate-700 sm:grid-cols-2">
-              <li>Widget-Reihenfolge & Sichtbarkeit</li>
               <li>Individuelle Zeiträume</li>
             </ul>
           </div>
@@ -206,28 +199,11 @@
 
 <script setup>
 definePageMeta({
-  title: 'MoneyKoi – Funktionen im Überblick',
+  title: 'Funktionen',
   description:
       'Anpassbare Konten & Kategorien, Transaktionen, Suche, Analysen, Monatsübersicht mit Diagrammen, Sprache & Währung, Offline-first mit automatischer Synchronisation.'
 })
-
-const observe = () => {
-  const els = document.querySelectorAll('[data-reveal]')
-  const io = new IntersectionObserver(
-      entries => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            e.target.setAttribute('data-inview', 'true')
-            io.unobserve(e.target)
-          }
-        }
-      },
-      {threshold: 0.2}
-  )
-  els.forEach(el => io.observe(el))
-}
-
-onMounted(() => observe())
+useHead({ title: 'Funktionen' })
 </script>
 
 <style scoped>
