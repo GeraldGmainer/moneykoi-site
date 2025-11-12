@@ -75,7 +75,10 @@
               <img
                   alt="MoneyKoi App-Screenshot"
                   class="block h-auto w-full rounded-[22px] shadow-[0_10px_30px_rgba(255,111,61,0.18)] animate-float"
+                  decoding="async"
+                  loading="eager"
                   src="/images/screen1.png"
+                  width="900"
               />
               <span
                   class="pointer-events-none absolute inset-0 rounded-[22px] ring-1 ring-white/40 mix-blend-luminosity"></span>
