@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import {Analytics} from '@vercel/analytics/nuxt';
+import AnalyticsConsent from "./components/AnalyticsConsent.vue";
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
 
 const color = computed(() => 'white')
 
@@ -21,6 +25,7 @@ useSeoMeta({
   twitterImage: '/social/og.png',
   twitterCard: 'summary_large_image'
 })
+const {consent, decided, ready, accept, decline} = useAnalyticsConsent()
 </script>
 
 <template>
@@ -32,5 +37,11 @@ useSeoMeta({
     <div class="mt-auto">
       <AppFooter/>
     </div>
+    <Analytics v-if="consent"/>
+    <AnalyticsConsent
+        v-if="ready && !decided"
+        @accept="accept"
+        @decline="decline"
+    />
   </div>
 </template>

@@ -178,7 +178,7 @@
             Wenn alles an einem ruhigen Ort steht, werden Muster sichtbar: Wo Geld hinfließt, was wichtig ist und wo Luft bleibt. Das senkt Stress und macht bessere Entscheidungen leicht.
           </p>
           <ul class="mt-5 list-disc gap-5 pl-8 text-sm text-slate-700">
-            <li class="my-4">Monat verstehen statt raten</li>
+            <li class="my-4">Ausgaben verstehen statt raten</li>
             <li class="my-4">Prioritäten schärfen</li>
             <li class="my-4">Ziele gelassen erreichen</li>
           </ul>
