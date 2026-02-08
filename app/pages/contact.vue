@@ -53,7 +53,7 @@
 
 <script setup>
 const email = 'moneykoi.app@gmail.com'
-const portfolioUrl = 'https://your-portfolio.example'
+const portfolioUrl = 'https://geraldgmainer.vercel.app/'
 definePageMeta({
   title: 'Kontakt',
   description: 'Kontakt zu Money Koi: E-Mail und Portfolio.'

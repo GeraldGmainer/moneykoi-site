@@ -2,7 +2,7 @@
   <header class="fixed inset-x-0 top-0 z-40 border-b border-orange-50 bg-white/90 backdrop-blur">
     <div class="mx-auto flex h-16 sm:h-20 lg:h-32 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <NuxtLink aria-label="Zur Startseite" class="inline-flex items-center gap-3" to="/">
-        <img alt="Money Koi logo" class="w-[36px] sm:w-[40px] lg:w-[64px]" src="/logos/logo.png"/>
+        <img alt="Money Koi logo" class="w-[36px] sm:w-[40px] lg:w-[92px]" src="/logos/logo.png"/>
         <span class="text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight text-slate-900">Money Koi</span>
       </NuxtLink>
 
