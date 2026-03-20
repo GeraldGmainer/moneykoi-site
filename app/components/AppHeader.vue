@@ -6,11 +6,29 @@
         <span class="text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight text-slate-900">Money Koi</span>
       </NuxtLink>
 
-      <nav class="hidden gap-8 text-base font-medium text-slate-600 sm:flex">
-        <NuxtLink class="transition hover:text-slate-900" to="/features">Funktionen</NuxtLink>
-        <NuxtLink class="transition hover:text-slate-900" to="/roadmap">Roadmap</NuxtLink>
-        <NuxtLink class="transition hover:text-slate-900" to="/contact">Kontakt</NuxtLink>
-      </nav>
+      <div class="hidden sm:flex items-center gap-8 text-base font-medium text-slate-600">
+        <nav class="flex gap-8">
+          <NuxtLink class="transition hover:text-slate-900" to="/features">Funktionen</NuxtLink>
+          <NuxtLink class="transition hover:text-slate-900" to="/roadmap">Roadmap</NuxtLink>
+          <NuxtLink class="transition hover:text-slate-900" to="/contact">Kontakt</NuxtLink>
+        </nav>
+
+        <div class="flex items-center gap-2 border-l border-slate-200 pl-8">
+          <button
+              :class="locale === 'de' ? 'text-slate-900 font-semibold' : 'text-slate-500 hover:text-slate-900 transition'"
+              @click="setLocale('de')"
+          >
+            DE
+          </button>
+          <span class="text-slate-300">|</span>
+          <button
+              :class="locale === 'en' ? 'text-slate-900 font-semibold' : 'text-slate-500 hover:text-slate-900 transition'"
+              @click="setLocale('en')"
+          >
+            EN
+          </button>
+        </div>
+      </div>
 
       <button
           :aria-expanded="open ? 'true' : 'false'"
@@ -26,9 +44,7 @@
     <transition name="fade">
       <div v-if="open" class="sm:hidden">
         <div class="fixed inset-0 z-30 bg-black/20" @click="open = false"/>
-        <div
-            class="absolute inset-x-0 top-full z-40 origin-top rounded-b-2xl border-b border-orange-100 bg-white shadow-xl"
-        >
+        <div class="absolute inset-x-0 top-full z-40 origin-top rounded-b-2xl border-b border-orange-100 bg-white shadow-xl">
           <nav class="mx-auto max-w-6xl px-4 py-4 text-base font-medium text-slate-700">
             <ul class="space-y-2">
               <li>
@@ -46,6 +62,22 @@
                   Kontakt
                 </NuxtLink>
               </li>
+
+              <li class="mt-4 pt-4 border-t border-orange-100 flex items-center gap-4 px-3">
+                <button
+                    :class="locale === 'de' ? 'text-slate-900 font-bold' : 'text-slate-500'"
+                    @click="setLocale('de'); open = false"
+                >
+                  Deutsch
+                </button>
+                <span class="text-slate-300">•</span>
+                <button
+                    :class="locale === 'en' ? 'text-slate-900 font-bold' : 'text-slate-500'"
+                    @click="setLocale('en'); open = false"
+                >
+                  English
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -55,8 +87,10 @@
 </template>
 
 <script lang="ts" setup>
+const {locale, setLocale} = useI18n()
 const open = ref(false)
 const route = useRoute()
+
 watch(() => route.fullPath, () => (open.value = false))
 </script>
 

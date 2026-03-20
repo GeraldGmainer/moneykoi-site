@@ -1,12 +1,28 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
         '@nuxt/eslint',
         '@nuxt/image',
         '@nuxt/ui',
         '@nuxt/content',
-        '@nuxt/icon'
+        '@nuxt/icon',
+        '@nuxtjs/i18n'
     ],
+
+    i18n: {
+        locales: [
+            {code: 'en', file: 'en.json'},
+            {code: 'de', file: 'de.json'}
+        ],
+        langDir: '',
+        defaultLocale: 'en',
+        strategy: 'prefix_except_default',
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            redirectOn: 'root',
+            fallbackLocale: 'en'
+        }
+    },
 
     devtools: {
         enabled: true
@@ -37,5 +53,5 @@ export default defineNuxtConfig({
                 braceStyle: '1tbs'
             }
         }
-    },
+    }
 })

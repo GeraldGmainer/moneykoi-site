@@ -6,13 +6,22 @@ import AppHeader from './components/AppHeader.vue'
 
 const color = computed(() => 'white')
 
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true
+})
+
 useHead({
+  htmlAttrs: {
+    lang: head.value.htmlAttrs!.lang,
+    dir: head.value.htmlAttrs!.dir
+  },
   meta: [
     {name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover'},
     {key: 'theme-color', name: 'theme-color', content: color}
   ],
   link: [{rel: 'icon', type: 'image/png', href: '/logos/logo.png'}],
-  htmlAttrs: {lang: 'de'},
   bodyAttrs: {
     class: 'min-h-[100svh] bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB] text-slate-900 overflow-x-hidden'
   },
