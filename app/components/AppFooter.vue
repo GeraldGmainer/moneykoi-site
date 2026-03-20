@@ -5,23 +5,24 @@
         <nav class="order-1 lg:order-2 w-full sm:w-auto">
           <ul class="flex flex-wrap justify-center gap-x-6 gap-y-4">
             <li class="py-4 lg:py-0">
-              <NuxtLink class="hover:text-slate-800" to="/legal/terms">Nutzungsbedingungen</NuxtLink>
+              <NuxtLink class="hover:text-slate-800" to="/legal/terms">{{ $t('footer.terms') }}</NuxtLink>
             </li>
             <li class="py-4 lg:py-0">
-              <NuxtLink class="hover:text-slate-800" to="/legal/imprint">Impressum</NuxtLink>
+              <NuxtLink class="hover:text-slate-800" to="/legal/imprint">{{ $t('footer.imprint') }}</NuxtLink>
             </li>
             <li class="py-4 lg:py-0">
-              <NuxtLink class="hover:text-slate-800" to="/legal/privacy">Datenschutz</NuxtLink>
+              <NuxtLink class="hover:text-slate-800" to="/legal/privacy">{{ $t('footer.privacy') }}</NuxtLink>
             </li>
           </ul>
         </nav>
 
         <span class="order-2 lg:order-1 text-center sm:text-left">
-          © 2025 Money Koi · Gerald Gmainer
+          {{ $t('footer.copyright') }}
         </span>
       </div>
     </div>
   </footer>
 </template>
+
 <script lang="ts" setup>
 </script>

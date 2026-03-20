@@ -9,10 +9,10 @@
     <PageHeader
         :blob="true"
         :border="true"
+        :eyebrow="$t('features.header.eyebrow')"
+        :subtitle="$t('features.header.subtitle')"
+        :title="$t('features.header.title')"
         align="left"
-        eyebrow="Funktionen"
-        subtitle="Ein Haushaltsbuch, das sich deinem System anpasst – mit klarer Struktur, sinnvollen Analysen und automatischer Synchronisation."
-        title="Mehr Klarheit. Mehr Ruhe."
     />
 
     <section class="relative border-b border-orange-50 bg-gradient-to-b from-[#FFFDF8] to-[#FFF6EB]">
@@ -25,8 +25,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFE4D5] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:cloud-arrow-up-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Offline-first & Sync</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Arbeite jederzeit weiter. Sobald Verbindung besteht, werden alle Änderungen automatisch im Hintergrund synchronisiert.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.offline.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.offline.desc') }}</p>
           </div>
 
           <div
@@ -35,8 +35,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFE8DB] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:folders-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Konten & Kategorien</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Eigene Konten und strukturierte Haupt- und Unterkategorien. Namen, Icons und Farben sind frei anpassbar.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.categories.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.categories.desc') }}</p>
           </div>
 
           <div
@@ -45,8 +45,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFEBDD] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:book-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Buchungen & Liste</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Transaktionen schnell erfassen, zuordnen und später bearbeiten. Die Liste bleibt klar und fokussiert.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.transactions.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.transactions.desc') }}</p>
           </div>
 
           <div
@@ -55,8 +55,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFE6DE] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:trend-up-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Start & Analysen</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Cashflow, Top-Ausgaben, Saldoverlauf, neueste Buchungen und ein Balance-Trend – alles auf der Startseite.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.analytics.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.analytics.desc') }}</p>
           </div>
 
           <div
@@ -65,8 +65,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFE4D5] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:chart-pie-slice-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Monats-Übersicht</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Zusammenfassung mit Diagrammen für Einnahmen und Ausgaben plus die Kategorien, die in diesem Monat zählen.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.month.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.month.desc') }}</p>
           </div>
 
           <div
@@ -75,8 +75,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFE8DB] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:magnifying-glass-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Suche & Filter</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Finde Einträge nach Text, Konto, Kategorie oder Zeitraum und bleib bei den relevanten Treffern.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.search.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.search.desc') }}</p>
           </div>
 
           <div
@@ -85,8 +85,8 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFEBDD] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:gear-six-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Einstellungen</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Sprache und Währung passend zu deinem Alltag. Alles richtet sich danach.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.settings.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.settings.desc') }}</p>
           </div>
 
           <div
@@ -95,63 +95,65 @@
             <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFE3D3] text-[#FF6F3D] group-hover:scale-105 transition-transform">
               <Icon class="h-5 w-5" name="ph:palette-bold"/>
             </div>
-            <h3 class="text-lg font-semibold text-slate-900">Design & Haptik</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">Minimalistisch, warm und konsistent. Dezent animiert, klar strukturiert und angenehm.</p>
+            <h3 class="text-lg font-semibold text-slate-900">{{ $t('features.cards.design.title') }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ $t('features.cards.design.desc') }}</p>
           </div>
         </div>
 
         <div class="mt-16 grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center">
           <div class="order-2 lg:order-1 opacity-0 translate-y-4 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">Start & Analysen</p>
-            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">Alles Relevante auf einen Blick</h2>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">Die Startseite bündelt Cashflow, Top-Ausgaben, Saldo-Verlauf, neueste Buchungen und einen Trend. Widgets sind
-              anpassbar.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">{{ $t('features.sections.analytics.eyebrow') }}</p>
+            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">{{ $t('features.sections.analytics.title') }}</h2>
+            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">{{ $t('features.sections.analytics.desc') }}</p>
             <ul class="mt-4 grid list-disc gap-2 pl-5 text-sm text-slate-700 sm:grid-cols-2">
-              <li>Gesamtsaldo</li>
-              <li>Cashflow</li>
-              <li>Top-Ausgaben</li>
-              <li>Saldo-Zeitlauf</li>
-              <li>Neueste Transaktionen</li>
-              <li>Saldo-Trend</li>
-              <li>Individuelle Zeiträume</li>
+              <li>{{ $t('features.sections.analytics.list.totalBalance') }}</li>
+              <li>{{ $t('features.sections.analytics.list.cashflow') }}</li>
+              <li>{{ $t('features.sections.analytics.list.topExpenses') }}</li>
+              <li>{{ $t('features.sections.analytics.list.balanceHistory') }}</li>
+              <li>{{ $t('features.sections.analytics.list.latestTransactions') }}</li>
+              <li>{{ $t('features.sections.analytics.list.balanceTrend') }}</li>
+              <li>{{ $t('features.sections.analytics.list.customPeriods') }}</li>
             </ul>
           </div>
           <div class="order-1 flex justify-center lg:order-2 lg:justify-center opacity-0 translate-y-4 transition-all duration-700 delay-150 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <img alt="Home mit Analysen" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500" src="/images/screen1.png"/>
+            <img :alt="$t('features.sections.analytics.alt')" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500"
+                 src="/images/screen1.png"/>
           </div>
         </div>
 
         <div class="mt-16 grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center">
           <div class="flex justify-center lg:justify-center opacity-0 translate-y-4 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <img alt="Kategorien mit Unterkategorien" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500"
+            <img :alt="$t('features.sections.categories.alt')" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500"
                  src="/images/screen4.png"/>
           </div>
           <div class="opacity-0 translate-y-4 transition-all duration-700 delay-150 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">Anpassbar</p>
-            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">Konten & Kategorien</h2>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">Eigene Konten, Haupt- und Unterkategorien, Icons, Farben und Reihenfolge. Alles nach deinem System.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">{{ $t('features.sections.categories.eyebrow') }}</p>
+            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">{{ $t('features.sections.categories.title') }}</h2>
+            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">{{ $t('features.sections.categories.desc') }}</p>
           </div>
         </div>
 
         <div class="mt-16 grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center">
           <div class="order-2 lg:order-1 opacity-0 translate-y-4 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">Schnellerfassung</p>
-            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">Buchungen & Liste</h2>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">Transaktionen schnell erfassen und später anpassen. Suche, Konten- und Kategorienzuordnung greifen ineinander.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">{{ $t('features.sections.transactions.eyebrow') }}</p>
+            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">{{ $t('features.sections.transactions.title') }}</h2>
+            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">{{ $t('features.sections.transactions.desc') }}</p>
           </div>
           <div class="order-1 flex justify-center lg:order-2 lg:justify-center opacity-0 translate-y-4 transition-all duration-700 delay-150 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <img alt="Buchungsliste" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500" src="/images/screen3.png"/>
+            <img :alt="$t('features.sections.transactions.alt')" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500"
+                 src="/images/screen3.png"/>
           </div>
         </div>
 
         <div class="mt-16 grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center">
           <div class="flex justify-center lg:justify-center opacity-0 translate-y-4 transition-all duration-700 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <img alt="Monatsübersicht" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500" src="/images/screen2.png"/>
+            <img :alt="$t('features.sections.month.alt')" class="block max-h-[560px] w-auto rounded-2xl shadow-[0_12px_40px_rgba(17,17,17,0.08)] hover:scale-[1.06] transition-transform duration-500"
+                 src="/images/screen2.png"/>
           </div>
           <div class="opacity-0 translate-y-4 transition-all duration-700 delay-150 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0" data-reveal>
-            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">Übersicht</p>
-            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">Monat im Blick</h2>
-            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">Diagramme für Einnahmen und Ausgaben plus die Kategorien, die in diesem Monat wirklich zählen.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">{{ $t('features.sections.month.eyebrow') }}</p>
+            <h2 class="text-xl lg:text-2xl font-semibold text-slate-900">{{ $t('features.sections.month.title') }}</h2>
+            <p class="mt-3 text-base lg:text-lg leading-7 lg:leading-8 text-slate-600 max-w-prose">{{ $t('features.sections.month.desc') }}</p>
           </div>
         </div>
       </div>
@@ -160,11 +162,12 @@
 </template>
 
 <script setup>
-definePageMeta({
-  title: 'Funktionen',
-  description: 'Anpassbare Konten & Kategorien, Transaktionen, Suche, Analysen, Monatsübersicht mit Diagrammen, Sprache & Währung, Offline-first mit automatischer Synchronisation.'
+const {t} = useI18n()
+
+useSeoMeta({
+  title: () => t('features.meta.title'),
+  description: () => t('features.meta.description')
 })
-useHead({title: 'Funktionen'})
 
 const observe = () => {
   const els = document.querySelectorAll('[data-reveal]')

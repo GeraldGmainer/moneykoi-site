@@ -1,11 +1,11 @@
 <template>
   <main class="bg-[#FFFDF8] text-slate-900">
     <PageHeader
-        eyebrow="Rechtliches"
-        title="Impressum"
-        subtitle="Angaben gemäß § 5 ECG und § 24 MedienG (Österreich)."
         :blob="true"
         :border="true"
+        :eyebrow="$t('imprint.header.eyebrow')"
+        :subtitle="$t('imprint.header.subtitle')"
+        :title="$t('imprint.header.title')"
         align="left"
     />
 
@@ -13,7 +13,7 @@
       <div class="rounded-3xl border border-orange-100 bg-white/95 shadow-sm shadow-orange-50/70 p-12">
         <div class="mt-8">
           <div>
-            <h2 class="text-lg font-semibold">Diensteanbieter</h2>
+            <h2 class="text-lg font-semibold">{{ $t('imprint.provider') }}</h2>
             <p class="mt-2">
               Gerald Gmainer<br>
               Money Koi
@@ -21,14 +21,14 @@
           </div>
 
           <div class="pt-6">
-            <h2 class="text-lg font-semibold">Anschrift</h2>
+            <h2 class="text-lg font-semibold">{{ $t('imprint.address') }}</h2>
             <p class="mt-2">Am Platzl 3<br>4451 Garsten<br>Österreich</p>
           </div>
 
           <div class="pt-6">
-            <h2 class="text-lg font-semibold">Kontakt</h2>
+            <h2 class="text-lg font-semibold">{{ $t('imprint.contact') }}</h2>
             <p class="mt-2">
-              E-Mail: <a href="mailto:moneykoi.app@gmail.com" class="underline decoration-slate-300 hover:decoration-slate-700">moneykoi.app@gmail.com</a>
+              {{ $t('imprint.emailLabel') }}: <a class="underline decoration-slate-300 hover:decoration-slate-700" href="mailto:moneykoi.app@gmail.com">moneykoi.app@gmail.com</a>
             </p>
           </div>
         </div>
@@ -38,9 +38,10 @@
 </template>
 
 <script setup>
-definePageMeta({
-  title: 'Impressum',
-  description: 'Impressum gemäß § 5 ECG.'
+const {t} = useI18n()
+
+useSeoMeta({
+  title: () => t('imprint.meta.title'),
+  description: () => t('imprint.meta.description')
 })
-useHead({ title: 'Impressum' })
 </script>

@@ -3,10 +3,10 @@
     <PageHeader
         :blob="true"
         :border="true"
+        :eyebrow="$t('contact.header.eyebrow')"
+        :subtitle="$t('contact.header.subtitle')"
+        :title="$t('contact.header.title')"
         align="left"
-        eyebrow="Kontakt"
-        subtitle="Kurze Wege, klare Antworten. Schreib mir einfach eine E-Mail."
-        title="Meld dich gern"
     />
 
     <div class="pointer-events-none absolute inset-0 -z-10">
@@ -18,7 +18,7 @@
     <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8 lg:mt-8">
       <div class="mx-auto w-full max-w-xl rounded-3xl border border-orange-100 bg-white/90 p-8 sm:p-10 text-center shadow-sm shadow-orange-50/70">
         <div class="mx-auto aspect-square h-36 w-36 overflow-hidden rounded-full ring-4 ring-white sm:h-40 sm:w-40">
-          <img alt="Profilfoto" class="h-full w-full object-cover" src="/images/profile.png"/>
+          <img :alt="$t('contact.profileAlt')" class="h-full w-full object-cover" src="/images/profile.png"/>
         </div>
 
         <h2 class="mt-6 text-2xl font-semibold tracking-tight text-slate-900">Gerald Gmainer</h2>
@@ -41,22 +41,24 @@
               target="_blank"
           >
             <Icon class="mr-2.5 h-5 w-5" name="lucide:globe"/>
-            <span class="px-1">Portfolio ansehen</span>
+            <span class="px-1">{{ $t('contact.portfolio') }}</span>
           </a>
         </div>
 
-        <p class="mt-5 text-xs text-slate-500">Ich melde mich schnellstmöglich</p>
+        <p class="mt-5 text-xs text-slate-500">{{ $t('contact.responsePromise') }}</p>
       </div>
     </section>
   </main>
 </template>
 
 <script setup>
+const {t} = useI18n()
+
 const email = 'moneykoi.app@gmail.com'
 const portfolioUrl = 'https://geraldgmainer.vercel.app/'
-definePageMeta({
-  title: 'Kontakt',
-  description: 'Kontakt zu Money Koi: E-Mail und Portfolio.'
+
+useSeoMeta({
+  title: () => t('contact.meta.title'),
+  description: () => t('contact.meta.description')
 })
-useHead({title: 'Kontakt'})
 </script>

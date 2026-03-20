@@ -1,16 +1,16 @@
 <template>
   <header class="fixed inset-x-0 top-0 z-40 border-b border-orange-50 bg-white/90 backdrop-blur">
     <div class="mx-auto flex h-16 sm:h-20 lg:h-32 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-      <NuxtLink aria-label="Zur Startseite" class="inline-flex items-center gap-3" to="/">
+      <NuxtLink :aria-label="$t('header.homeAriaLabel')" class="inline-flex items-center gap-3" to="/">
         <img alt="Money Koi logo" class="w-[36px] sm:w-[40px] lg:w-[92px]" src="/logos/logo.png"/>
         <span class="text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight text-slate-900">Money Koi</span>
       </NuxtLink>
 
       <div class="hidden sm:flex items-center gap-8 text-base font-medium text-slate-600">
         <nav class="flex gap-8">
-          <NuxtLink class="transition hover:text-slate-900" to="/features">Funktionen</NuxtLink>
-          <NuxtLink class="transition hover:text-slate-900" to="/roadmap">Roadmap</NuxtLink>
-          <NuxtLink class="transition hover:text-slate-900" to="/contact">Kontakt</NuxtLink>
+          <NuxtLink class="transition hover:text-slate-900" to="/features">{{ $t('header.features') }}</NuxtLink>
+          <NuxtLink class="transition hover:text-slate-900" to="/roadmap">{{ $t('header.roadmap') }}</NuxtLink>
+          <NuxtLink class="transition hover:text-slate-900" to="/contact">{{ $t('header.contact') }}</NuxtLink>
         </nav>
 
         <div class="flex items-center gap-2 border-l border-slate-200 pl-8">
@@ -32,7 +32,7 @@
 
       <button
           :aria-expanded="open ? 'true' : 'false'"
-          aria-label="Menü öffnen"
+          :aria-label="$t('header.menuAriaLabel')"
           class="sm:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-700 ring-1 ring-orange-100"
           @click="open = !open"
       >
@@ -49,17 +49,17 @@
             <ul class="space-y-2">
               <li>
                 <NuxtLink class="block rounded-lg px-3 py-2 hover:bg-orange-50" to="/features" @click="open = false">
-                  Funktionen
+                  {{ $t('header.features') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink class="block rounded-lg px-3 py-2 hover:bg-orange-50" to="/roadmap" @click="open = false">
-                  Roadmap
+                  {{ $t('header.roadmap') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink class="block rounded-lg px-3 py-2 hover:bg-orange-50" to="/contact" @click="open = false">
-                  Kontakt
+                  {{ $t('header.contact') }}
                 </NuxtLink>
               </li>
 

@@ -1,4 +1,560 @@
 {
-  "welcome": "Welcome to Money Koi",
-  "budget": "Budget Book"
+  "home": {
+    "meta": {
+      "title": "Money Koi – Calm, Offline Budget Book.",
+      "description": "Money Koi is a calm, offline-first budget book. Less noise, more balance."
+    },
+    "hero": {
+      "pretitle": "Calm. Clear. Simple.",
+      "title1": "Your path to financial",
+      "titleHighlight": "harmony",
+      "subtitle": "Plan smarter, spend consciously, and stay in balance. Turn your budget book into a calm daily routine.",
+      "comingSoon": "(coming soon)",
+      "googlePlay": "Google Play",
+      "appStore": "App Store"
+    },
+    "intro": {
+      "pretitle": "Designed for you",
+      "title": "Clarity over your money"
+    },
+    "cards": {
+      "offline": {
+        "title": "Instant & Offline",
+        "desc": "No waiting times, even without a connection. Always ready for the next entry."
+      },
+      "focus": {
+        "title": "Clear Focus",
+        "desc": "Only the metrics that truly matter. No clutter, no stress."
+      },
+      "design": {
+        "title": "Calm Design",
+        "desc": "Warmth, balance, readability. Design that brings you peace."
+      }
+    },
+    "designSection": {
+      "pretitle": "Beautiful & functional",
+      "title": "Space for the essentials",
+      "desc": "Every view is designed to keep you calm and focused: clear hierarchies, good readability, and no distractions. Make decisions at a glance."
+    },
+    "why": {
+      "pretitle": "Why a budget book",
+      "title": "Clarity instead of gut feeling",
+      "desc1": "When everything is in one calm place, patterns become visible: where money flows, what matters, and where there's breathing room. This reduces stress and makes better decisions easy.",
+      "list1": "Understand spending instead of guessing",
+      "list2": "Sharpen priorities",
+      "list3": "Achieve goals calmly",
+      "desc2": "MoneyKoi is the simple, modern version of the paper budget book."
+    },
+    "cta": {
+      "pretitle": "Ready?",
+      "desc": "If you want to see how this feels in everyday life, take a look at the core features.",
+      "button": "View features"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Contact Money Koi: Email and Portfolio."
+    },
+    "header": {
+      "eyebrow": "Contact",
+      "title": "Get in touch",
+      "subtitle": "Short paths, clear answers. Just drop me an email."
+    },
+    "profileAlt": "Profile photo",
+    "portfolio": "View portfolio",
+    "responsePromise": "I'll get back to you as soon as possible"
+  },
+  "features": {
+    "meta": {
+      "title": "Features",
+      "description": "Customizable accounts & categories, transactions, search, analytics, monthly overview with charts, language & currency, offline-first with automatic synchronization."
+    },
+    "header": {
+      "eyebrow": "Features",
+      "title": "More clarity. More peace.",
+      "subtitle": "A budget book that adapts to your system – with clear structure, meaningful analytics, and automatic synchronization."
+    },
+    "cards": {
+      "offline": {
+        "title": "Offline-first & Sync",
+        "desc": "Keep working anytime. Once connected, all changes are automatically synced in the background."
+      },
+      "categories": {
+        "title": "Accounts & Categories",
+        "desc": "Custom accounts and structured main and subcategories. Names, icons, and colors are fully customizable."
+      },
+      "transactions": {
+        "title": "Transactions & List",
+        "desc": "Quickly record, assign, and edit transactions later. The list stays clear and focused."
+      },
+      "analytics": {
+        "title": "Home & Analytics",
+        "desc": "Cashflow, top expenses, balance history, latest transactions, and a balance trend – all on the home screen."
+      },
+      "month": {
+        "title": "Monthly Overview",
+        "desc": "Summary with charts for income and expenses, plus the categories that matter this month."
+      },
+      "search": {
+        "title": "Search & Filter",
+        "desc": "Find entries by text, account, category, or time period and stay focused on relevant results."
+      },
+      "settings": {
+        "title": "Settings",
+        "desc": "Language and currency tailored to your daily life. Everything adapts accordingly."
+      },
+      "design": {
+        "title": "Design & Feel",
+        "desc": "Minimalist, warm, and consistent. Subtly animated, clearly structured, and pleasant."
+      }
+    },
+    "sections": {
+      "analytics": {
+        "eyebrow": "Home & Analytics",
+        "title": "Everything relevant at a glance",
+        "desc": "The home screen bundles cashflow, top expenses, balance history, latest transactions, and a trend. Widgets are customizable.",
+        "list": {
+          "totalBalance": "Total Balance",
+          "cashflow": "Cashflow",
+          "topExpenses": "Top Expenses",
+          "balanceHistory": "Balance History",
+          "latestTransactions": "Latest Transactions",
+          "balanceTrend": "Balance Trend",
+          "customPeriods": "Custom Periods"
+        },
+        "alt": "Home with analytics"
+      },
+      "categories": {
+        "eyebrow": "Customizable",
+        "title": "Accounts & Categories",
+        "desc": "Custom accounts, main and subcategories, icons, colors, and sorting. Everything according to your system.",
+        "alt": "Categories with subcategories"
+      },
+      "transactions": {
+        "eyebrow": "Quick Entry",
+        "title": "Transactions & List",
+        "desc": "Quickly record transactions and adjust them later. Search, account, and category assignments work seamlessly together.",
+        "alt": "Transaction list"
+      },
+      "month": {
+        "eyebrow": "Overview",
+        "title": "Month at a glance",
+        "desc": "Charts for income and expenses plus the categories that really count this month.",
+        "alt": "Monthly overview"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact",
+        "description": "Contact Money Koi: Email and Portfolio."
+      },
+      "header": {
+        "eyebrow": "Contact",
+        "title": "Get in touch",
+        "subtitle": "Short paths, clear answers. Just drop me an email."
+      },
+      "profileAlt": "Profile photo",
+      "portfolio": "View portfolio",
+      "responsePromise": "I'll get back to you as soon as possible"
+    }
+  },
+  "roadmap": {
+    "meta": {
+      "title": "Roadmap",
+      "description": "Planned features for Money Koi: Priorities, phases, and outlook."
+    },
+    "header": {
+      "eyebrow": "Roadmap",
+      "title": "Money Koi is evolving",
+      "subtitle": "The most important steps first. Order may change – quality over speed."
+    },
+    "topPriority": "Top Priority",
+    "phase1": {
+      "title": "Phase 1 · Focus & Foundation",
+      "desc": "Essentials for family use and clear goals.",
+      "items": {
+        "offline": {
+          "title": "Offline-only Mode",
+          "desc": "Fully usable without an account or server connection. Data remains exclusively on the device."
+        },
+        "family": {
+          "title": "Family Account & Members",
+          "desc": "Shared budgets, roles, and permissions for partners and family."
+        },
+        "goals": {
+          "title": "Budget Goals & Tracking",
+          "desc": "Goals per category and month, real-time progress."
+        },
+        "recurring": {
+          "title": "Recurring Transactions",
+          "desc": "Subscriptions, rent, salary – automatically scheduled and clearly listed."
+        },
+        "closing": {
+          "title": "Monthly Closing",
+          "desc": "Close the month, set carryovers, and save a brief summary."
+        },
+        "transfers": {
+          "title": "Transfers Between Accounts",
+          "desc": "Simple transfers with counter-entries and a clear history."
+        },
+        "filters": {
+          "title": "Advanced Filters",
+          "desc": "Filter by period, account, category, amount, text, and combinations."
+        },
+        "theme": {
+          "title": "Light Theme",
+          "desc": "Bright design as an alternative to the default dark look."
+        }
+      }
+    },
+    "phase2": {
+      "title": "Phase 2 · Comfort & Efficiency",
+      "desc": "Faster entry, better analysis, more convenient workflows.",
+      "items": {
+        "web": {
+          "title": "Web Management",
+          "desc": "Manage your budget book in the browser, ideal for keyboard power users."
+        },
+        "photos": {
+          "title": "Save Photos",
+          "desc": "Attach receipts directly to transactions and easily find them again."
+        },
+        "scan": {
+          "title": "Receipt Scan & Recognition",
+          "desc": "Extract text and amounts from receipts and pre-fill entries."
+        },
+        "bulk": {
+          "title": "Bulk Entry",
+          "desc": "Quickly save multiple items from a receipt one after another."
+        },
+        "widgets": {
+          "title": "Android Widgets",
+          "desc": "Quick access for entries, overview, and goals right on your home screen."
+        },
+        "charts": {
+          "title": "More Analytics & Charts",
+          "desc": "Trends, histories, categories over time – presented calmly."
+        }
+      }
+    },
+    "phase3": {
+      "title": "Phase 3 · Foresight & Extras",
+      "desc": "Intelligence and motivation – later, once the foundation is solid.",
+      "items": {
+        "forecasts": {
+          "title": "Forecasts",
+          "desc": "Expected monthly progression and remaining budget per category."
+        },
+        "prompt": {
+          "title": "Quick Entry via Single Prompt",
+          "desc": "One input, fully pre-filled transaction. Optional via voice."
+        },
+        "voice": {
+          "title": "Voice Recording",
+          "desc": "Dictate transactions for quick entry on the go."
+        },
+        "gamification": {
+          "title": "Gamification",
+          "desc": "Leaderboards, quests, goals, and badges – optional and subtle."
+        },
+        "aiStrategies": {
+          "title": "AI Savings Strategies",
+          "desc": "Suggestions tailored to your patterns, respectful and transparent."
+        },
+        "aiReports": {
+          "title": "AI Reports & Recommendations",
+          "desc": "Monthly reports in plain text with gentle, actionable tips."
+        }
+      }
+    },
+    "footer": {
+      "feedback": "Feedback or a request?",
+      "callToAction": "Let me know – the roadmap stays alive."
+    }
+  },
+  "analyticsConsent": {
+    "message": "Money Koi would like to collect anonymized analytics data to improve the website. Do you agree?",
+    "decline": "Decline",
+    "accept": "Accept",
+    "disclaimer": "No personal data is stored. You can reset your decision at any time in the settings."
+  },
+  "footer": {
+    "terms": "Terms of Use",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 Money Koi · Gerald Gmainer"
+  },
+  "header": {
+    "homeAriaLabel": "Go to home page",
+    "features": "Features",
+    "roadmap": "Roadmap",
+    "contact": "Contact",
+    "menuAriaLabel": "Toggle menu"
+  },
+  "templateMenu": {
+    "starter": "Starter",
+    "landing": "Landing",
+    "docs": "Docs",
+    "saas": "SaaS",
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "portfolio": "Portfolio",
+    "changelog": "Changelog"
+  },
+  "imprint": {
+    "meta": {
+      "title": "Imprint",
+      "description": "Imprint according to § 5 ECG."
+    },
+    "header": {
+      "eyebrow": "Legal",
+      "title": "Imprint",
+      "subtitle": "Information according to § 5 ECG and § 24 MedienG (Austria)."
+    },
+    "provider": "Service Provider",
+    "address": "Address",
+    "contact": "Contact",
+    "emailLabel": "Email"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Privacy policy for Money Koi: Responsible party, data types, purposes, processors, storage, deletion, rights, and contact."
+    },
+    "header": {
+      "eyebrow": "Privacy",
+      "title": "Your Data. Clear and respectful.",
+      "subtitle": "This privacy policy applies to the Money Koi app and – as soon as available – the web version."
+    },
+    "sections": {
+      "one": {
+        "title": "1. Controller & Scope",
+        "responsible": "Responsible: Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria ·",
+        "email": "Email:",
+        "scope": "Scope: Mobile app {app} and future web version with similar functions."
+      },
+      "two": {
+        "title": "2. Processed Data Types",
+        "auth": {
+          "title": "Authentication & Profile",
+          "list": [
+            "Email for OTP login; for Google OAuth: Identifier (e.g., sub), email",
+            "Password hash (email login only)",
+            "Metadata: tenant_id, profile_id, role",
+            "Profile: display_name, avatar_url, settings (e.g., currency)"
+          ]
+        },
+        "content": {
+          "title": "Household & Content Data",
+          "list": [
+            "Household (tenant): Name",
+            "Accounts: Name, icon_name, icon_color",
+            "Categories: Name, type (income/outcome), parent_id, icons",
+            "Bookings: date, description, amount, links to account/category"
+          ]
+        },
+        "tech": {
+          "title": "Technical & Sync Data",
+          "list": [
+            "Timestamps: created_at, updated_at, deleted_at",
+            "Sync log: profile_id, table_name, row_id, changed_at",
+            "Server logs, App/OS version for operation and error analysis"
+          ]
+        },
+        "web": {
+          "title": "Website (future)",
+          "list": [
+            "Necessary cookies/techniques for operation",
+            "Analytics only after explicit consent (Opt-in)"
+          ]
+        }
+      },
+      "three": {
+        "title": "3. Purposes and Legal Bases (Art. 6 GDPR)",
+        "list": [
+          "Provision and use of the app, account management, synchronization, data management (Art. 6(1)(b) – contract/contract-like relationship)",
+          "Stability, security, error analysis, abuse and failure prevention (Art. 6(1)(f) – legitimate interest)",
+          "Website analytics only with consent (Art. 6(1)(a)); revocable"
+        ]
+      },
+      "four": {
+        "title": "4. Recipients & Processors",
+        "list": [
+          "Supabase (Auth, Postgres, Storage; EU region, e.g., Frankfurt)",
+          "Sentry for app/web error analysis; in-app opt-out planned",
+          "Vercel for website hosting/analytics; analytics only after opt-in",
+          "Email delivery via Supabase SMTP; planned: Amazon SES for OTP emails",
+          "Data transfers to third countries only if necessary and with appropriate guarantees (e.g., SCCs/DPF)"
+        ]
+      },
+      "five": {
+        "title": "5. Storage Locations & Deletion",
+        "list": [
+          "App: SQLite for content; tokens in Flutter Secure Storage",
+          "Server: Supabase in the EU",
+          "Self-deletion possible in the app; account deletion leads to removal of server data incl. backups usually within 30 days",
+          "Logs/telemetry are kept for up to 90 days"
+        ]
+      },
+      "six": {
+        "title": "6. Cookies, Local Storage & Consents",
+        "list": [
+          "App: no third-party cookies; local storage for offline functions",
+          "Website: only necessary cookies by default; analytics only after opt-in (consent banner)",
+          "Consents can be revoked at any time with effect for the future"
+        ]
+      },
+      "seven": {
+        "title": "7. Security",
+        "list": [
+          "TLS encryption, role-based access, Supabase RLS/policies",
+          "Privacy-friendly defaults and regular updates"
+        ]
+      },
+      "eight": {
+        "title": "8. Minors",
+        "text": "The service is not directed at children under 16. Use by minors only with the consent of legal guardians."
+      },
+      "nine": {
+        "title": "9. Data Subject Rights",
+        "list": [
+          "Access, rectification, erasure, restriction, data portability, objection",
+          "Revocation of granted consents possible at any time",
+          "Complaint to the Austrian Data Protection Authority, Barichgasse 40–42, 1030 Vienna, dsb{'@'}dsb.gv.at",
+          "Contact for inquiries: {email} (response usually within 3 business days)"
+        ]
+      },
+      "ten": {
+        "title": "10. Changes to this Policy",
+        "text": "We adapt this policy as necessary, e.g., for new functions or legal situations. Status: {date}."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Use",
+      "description": "Terms of use for Money Koi: account, data, prohibitions, liability, changes, and contact."
+    },
+    "header": {
+      "eyebrow": "Legal",
+      "title": "Terms of Use",
+      "subtitle": "Basics of using Money Koi – scope, accounts, rules, liability, and changes."
+    },
+    "sections": {
+      "one": {
+        "title": "1. Provider, Scope",
+        "text": "Contractual partner and operator of the app {app} is {name}, {address}. These terms govern the use of the mobile app. A web version with similar functions is planned and will be covered by these terms upon launch."
+      },
+      "two": {
+        "tag": "Accounts",
+        "title": "2. Account & Registration",
+        "list": [
+          "Login via Email OTP and Google OAuth.",
+          "An account can be used on multiple devices.",
+          "Currently, shared use within a family is possible via one account; in the future, separate family accounts within a shared tenant will be supported.",
+          "There is no rigid age limit; the app is de facto aimed at adult users. Use by minors is only permitted with the consent of legal guardians."
+        ]
+      },
+      "three": {
+        "tag": "Data",
+        "title": "3. Content & User Data",
+        "list": [
+          "Processed data: login data (email), profile settings, accounts, categories, transactions.",
+          "Illegal, misleading, or harmful content is prohibited. Automated mass data entry, scraping, or bypassing security is forbidden.",
+          "Data export is currently not available and may be added later."
+        ]
+      },
+      "four": {
+        "tag": "Operation",
+        "title": "4. Performance, Availability, Support",
+        "list": [
+          "Provision on a best-effort basis, without a guarantee of permanent availability or being error-free.",
+          "Regular backups are performed; there is no claim to full restoration.",
+          "Support via email: {email}. Response usually within three business days.",
+          "Offline-First: Changes are automatically synchronized in the background when a connection is established."
+        ]
+      },
+      "five": {
+        "tag": "Prices",
+        "title": "5. Prices, Payments, Cancellation",
+        "list": [
+          "The service is currently free and ad-free.",
+          "A subscription model is planned (approx. €0.99/month) after completion of the first expansion phase. Processing via app stores where applicable.",
+          "When paid services are introduced, information regarding prices, terms, termination, and cancellation rights will be provided in advance."
+        ]
+      },
+      "six": {
+        "tag": "Third-party",
+        "title": "6. Third-party Providers & Transfers",
+        "list": [
+          "Supabase as infrastructure/backend (EU region).",
+          "Website hosting and analytics via Vercel.",
+          "Sentry standard telemetry for stability; an opt-out option is offered within the app.",
+          "Planned email delivery service for login emails (e.g., Amazon service) may be added later."
+        ]
+      },
+      "seven": {
+        "tag": "IP",
+        "title": "7. Intellectual Property",
+        "list": [
+          "App, content, designs, and trademarks remain the property of Gerald Gmainer.",
+          "Use of logos and screenshots for press/reviews is permitted within reasonable limits, provided Money Koi is correctly referenced."
+        ]
+      },
+      "eight": {
+        "tag": "Rules",
+        "title": "8. Permissible Use",
+        "list": [
+          "Prohibited are illegal content, harassment, abuse of services, bypassing technical protection measures, unauthorized automation, or sharing access data.",
+          "Commercial resale or rental of access is not permitted."
+        ]
+      },
+      "nine": {
+        "tag": "Termination",
+        "title": "9. Termination & Suspension",
+        "list": [
+          "Users can terminate their account at any time. Data is generally deleted within 30 days; backup copies may persist for a limited time.",
+          "In the event of serious violations, access may be suspended or terminated without notice."
+        ]
+      },
+      "ten": {
+        "tag": "Liability",
+        "title": "10. Liability & Warranty",
+        "list": [
+          "No guarantee is given for uninterrupted or error-free operation.",
+          "Liability for intent, gross negligence, as well as personal injury remains unaffected. Otherwise, liability is limited to foreseeable, contract-typical damages."
+        ]
+      },
+      "eleven": {
+        "tag": "Changes",
+        "title": "11. Changes to Terms and Service",
+        "list": [
+          "Factually justified adjustments to these terms or the service may be made.",
+          "Significant changes will be announced at least 14 days before taking effect in the app or via email. In case of objection, the right to terminate the account without notice exists.",
+          "Pure clarifications, bug fixes, and beneficial changes apply immediately."
+        ]
+      },
+      "twelve": {
+        "tag": "Law",
+        "title": "12. Applicable Law, Language",
+        "list": [
+          "Austrian law applies, while maintaining mandatory consumer protection provisions of the state of residence.",
+          "The contract language is German. Translations are provided for clarity."
+        ]
+      },
+      "thirteen": {
+        "tag": "Contact",
+        "title": "13. Contact",
+        "list": [
+          "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria",
+          "Email: {email}"
+        ]
+      }
+    },
+    "footer": {
+      "alphaNote": "Alpha/Beta Note: Money Koi is in an early stage of development. Features, interfaces, and integrations are subject to change.",
+      "status": "Status: {date}"
+    }
+  }
 }

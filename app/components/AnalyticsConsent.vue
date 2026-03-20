@@ -6,25 +6,25 @@
   >
     <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <p class="text-sm leading-relaxed text-slate-700">
-        Money Koi möchte anonymisierte Analytics-Daten erfassen, um die Website zu verbessern. Einverstanden?
+        {{ $t('analyticsConsent.message') }}
       </p>
       <div class="flex shrink-0 gap-2">
         <button
             class="inline-flex items-center justify-center rounded-full border border-orange-200 bg-white px-4 py-2 text-sm font-medium text-slate-800 hover:bg-orange-50 active:translate-y-px"
             @click="$emit('decline')"
         >
-          Ablehnen
+          {{ $t('analyticsConsent.decline') }}
         </button>
         <button
             class="inline-flex items-center justify-center rounded-full bg-[#FF6F3D] px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-orange-200/70 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-px"
             @click="$emit('accept')"
         >
-          Akzeptieren
+          {{ $t('analyticsConsent.accept') }}
         </button>
       </div>
     </div>
     <p class="mt-2 text-xs text-slate-500">
-      Es werden keine personenbezogenen Daten gespeichert. Du kannst deine Entscheidung jederzeit in den Einstellungen zurücksetzen.
+      {{ $t('analyticsConsent.disclaimer') }}
     </p>
   </div>
 </template>
