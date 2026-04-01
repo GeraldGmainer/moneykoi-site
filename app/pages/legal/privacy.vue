@@ -25,8 +25,8 @@
 
           <div>
             <h2 class="text-xl font-semibold text-slate-900">{{ $t('privacy.sections.two.title') }}</h2>
-            <div class="mt-3 grid gap-6 lg:grid-cols-2">
-              <div class="rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/70">
+            <div class="mt-3">
+              <div class="rounded-3xl p-3">
                 <h3 class="font-semibold text-slate-900">{{ $t('privacy.sections.two.auth.title') }}</h3>
                 <ul class="mt-2 list-disc pl-5 text-slate-700 space-y-1">
                   <li v-for="(item, index) in $tm('privacy.sections.two.auth.list')" :key="index">
@@ -34,7 +34,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/70">
+              <div class="rounded-3xl p-3">
                 <h3 class="font-semibold text-slate-900">{{ $t('privacy.sections.two.content.title') }}</h3>
                 <ul class="mt-2 list-disc pl-5 text-slate-700 space-y-1">
                   <li v-for="(item, index) in $tm('privacy.sections.two.content.list')" :key="index">
@@ -42,18 +42,10 @@
                   </li>
                 </ul>
               </div>
-              <div class="rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/70">
+              <div class="rounded-3xl p-3">
                 <h3 class="font-semibold text-slate-900">{{ $t('privacy.sections.two.tech.title') }}</h3>
                 <ul class="mt-2 list-disc pl-5 text-slate-700 space-y-1">
                   <li v-for="(item, index) in $tm('privacy.sections.two.tech.list')" :key="index">
-                    {{ $rt(item) }}
-                  </li>
-                </ul>
-              </div>
-              <div class="rounded-3xl border border-orange-100 bg-white/80 p-6 shadow-sm shadow-orange-50/70">
-                <h3 class="font-semibold text-slate-900">{{ $t('privacy.sections.two.web.title') }}</h3>
-                <ul class="mt-2 list-disc pl-5 text-slate-700 space-y-1">
-                  <li v-for="(item, index) in $tm('privacy.sections.two.web.list')" :key="index">
                     {{ $rt(item) }}
                   </li>
                 </ul>
@@ -125,7 +117,7 @@
           <div>
             <h2 class="text-xl font-semibold text-slate-900">{{ $t('privacy.sections.ten.title') }}</h2>
             <p class="mt-2 text-slate-700">
-              {{ $t('privacy.sections.ten.text', {date: '12.11.2025'}) }}
+              {{ $t('privacy.sections.ten.text', {date: '01.04.2026'}) }}
             </p>
           </div>
         </div>

@@ -305,235 +305,227 @@
   },
   "privacy": {
     "meta": {
-      "title": "Datenschutz",
-      "description": "Datenschutzerklärung für Money Koi: Verantwortlicher, Datenarten, Zwecke, Auftragsverarbeiter, Speicherorte, Löschung, Rechte und Kontakt."
+      "title": "Datenschutzerklärung | Money Koi",
+      "description": "Datenschutzerklärung für Money Koi: Informationen zur Verarbeitung personenbezogener Daten, Rechtsgrundlagen, Drittanbieter und Ihre Rechte als Nutzer."
     },
     "header": {
       "eyebrow": "Datenschutz",
-      "title": "Deine Daten. Klar und respektvoll.",
-      "subtitle": "Diese Datenschutzerklärung gilt für die Money Koi App und – sobald verfügbar – die Web-Version."
+      "title": "Datenschutzerklärung",
+      "subtitle": "Diese Datenschutzerklärung gibt Ihnen einen detaillierten Überblick darüber, wie Money Koi personenbezogene Daten in der mobilen App sowie auf der zugehörigen Website verarbeitet."
     },
     "sections": {
       "one": {
-        "title": "1. Verantwortlicher & Geltungsbereich",
-        "responsible": "Verantwortlich: Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Österreich ·",
-        "email": "E-Mail:",
-        "scope": "Geltung: Mobile App {app} und zukünftig die Web-Version mit gleichartigen Funktionen."
+        "title": "1. Verantwortlicher und Kontakt",
+        "responsible": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und des österreichischen Datenschutzgesetzes (DSG) ist:",
+        "details": "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Österreich.",
+        "email_label": "Kontakt für datenschutzrechtliche Anfragen:",
+        "scope": "Diese Erklärung gilt für die mobile Applikation '{app}' (iOS und Android) sowie die zugehörige Webpräsenz zur Bereitstellung und Bewerbung des Dienstes."
       },
       "two": {
-        "title": "2. Verarbeitete Datenarten",
+        "title": "2. Kategorien verarbeiteter Daten",
+        "intro": "Wir verarbeiten Daten, die Sie aktiv eingeben, sowie technisch notwendige Daten, die für den Betrieb des Dienstes erforderlich sind.",
         "auth": {
-          "title": "Authentifizierung & Profil",
+          "title": "2.1 Authentifizierungs- und Profildaten",
           "list": [
-            "E-Mail beim OTP-Login; bei Google OAuth: Identifier (z. B. sub), E-Mail",
-            "Passwort-Hash (nur beim E-Mail-Login)",
-            "Metadaten: tenant_id, profile_id, role",
-            "Profil: display_name, avatar_url, settings (z. B. Währung)"
+            "E-Mail-Adresse: Erforderlich für den Login via Magic Link (OTP) und die Kontoverwaltung.",
+            "Google OAuth: Bei Nutzung des Google-Logins verarbeiten wir Ihre eindeutige Google-ID (sub) und E-Mail-Adresse. Wir greifen nicht auf Ihr Google Drive oder sonstige private Dateien zu. Diese Daten dienen rein der Identitätsprüfung.",
+            "Passwort-Metadaten: Gesalzene und gehashte Passwort-Strings (nur bei E-Mail/Passwort-Login); das Klartext-Passwort wird niemals gespeichert.",
+            "Interne Identifikatoren: tenant_id, profile_id sowie zugewiesene Benutzerrollen zur Systemsteuerung."
           ]
         },
         "content": {
-          "title": "Haushalts- & Inhaltsdaten",
+          "title": "2.2 Nutzergenerierte Inhalte (Finanzdaten)",
           "list": [
-            "Haushalt (tenant): Name",
-            "Konten (account): Name, icon_name, icon_color",
-            "Kategorien (category): Name, category_type (income/outcome), parent_id, icon_*",
-            "Buchungen (booking): date, description, amount, Verknüpfungen zu Konto/Kategorie"
+            "Profilinformationen: Anzeigename, Avatar-URL und lokale Einstellungen (z. B. Währung, Sprache).",
+            "Haushaltsdaten (Tenants): Namen und strukturelle Gruppierung von privaten oder geteilten Haushalten.",
+            "Konten- und Kategoriendaten: Vom Nutzer vergebene Namen, Icons und Farbcodes.",
+            "Buchungsdatensätze: Datum, Beschreibung, Betrag und Verknüpfungen zu Konten/Kategorien. Alle Finanzdaten werden manuell erfasst; es erfolgt kein automatisierter Bankabgleich (PSD2)."
           ]
         },
         "tech": {
-          "title": "Technische & Sync-Daten",
+          "title": "2.3 Technische Daten und Synchronisationsprotokolle",
           "list": [
-            "Zeitstempel: created_at, updated_at, deleted_at",
-            "Sync-Protokoll (sync_log): profile_id, table_name, row_id, changed_at",
-            "Server-Logs, App/OS-Version für Betrieb und Fehleranalyse"
-          ]
-        },
-        "web": {
-          "title": "Website (künftig)",
-          "list": [
-            "Notwendige Cookies/Techniken für Betrieb",
-            "Analytics nur nach ausdrücklicher Einwilligung (Opt-in)"
+            "Synchronisations-Logs: profile_id, betroffene Tabellen und Zeitstempel, um die Konsistenz zwischen Offline- und Online-Modus zu gewährleisten.",
+            "System-Metadaten: created_at, updated_at und deleted_at Zeitstempel für alle Datensätze.",
+            "Geräteinformationen: App-Version, Betriebssystemversion und Gerätetyp zur Fehleranalyse und Stabilitätsoptimierung."
           ]
         }
       },
       "three": {
-        "title": "3. Zwecke und Rechtsgrundlagen (Art. 6 DSGVO)",
+        "title": "3. Rechtsgrundlagen der Verarbeitung",
+        "intro": "Die Verarbeitung Ihrer Daten erfolgt strikt auf Basis der DSGVO:",
         "list": [
-          "Bereitstellung und Nutzung der App, Kontoführung, Synchronisierung, Datenverwaltung (Art. 6 Abs. 1 lit. b – Vertrag/vertragsähnliches Verhältnis)",
-          "Stabilität, Sicherheit, Fehleranalyse, Missbrauchs- und Ausfallprävention (Art. 6 Abs. 1 lit. f – berechtigtes Interesse)",
-          "Website-Analytics ausschließlich mit Einwilligung (Art. 6 Abs. 1 lit. a); widerrufbar"
+          "Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO): Zur Bereitstellung der App-Funktionen, Synchronisation und Kontoverwaltung.",
+          "Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO): Zur Gewährleistung der Netzsicherheit, Fehleranalyse (Sentry) sowie Missbrauchsprävention.",
+          "Einwilligung (Art. 6 Abs. 1 lit. a DSGVO): Für optionales Web-Analytics (Vercel) oder Funktionen, für die Sie eine explizite Zustimmung erteilt haben. Diese ist jederzeit widerrufbar."
         ]
       },
       "four": {
-        "title": "4. Empfänger & Auftragsverarbeiter",
+        "title": "4. Empfänger und Auftragsverarbeiter",
+        "intro": "Wir nutzen spezialisierte Dienstleister, die als Auftragsverarbeiter tätig sind:",
         "list": [
-          "Supabase (Auth, Postgres, Storage; EU-Region, z. B. eu-central-1/Frankfurt)",
-          "Sentry für App/Web-Fehleranalyse; in-App Opt-out vorgesehen",
-          "Vercel für Website-Hosting/Analytics; Analytics nur nach Opt-in",
-          "E-Mail-Versand über Supabase SMTP; geplant: Amazon SES für OTP-Mails",
-          "Datenübermittlungen in Drittländer nur bei Erfordernis und mit geeigneten Garantien (z. B. SCCs/DPF)"
+          "Supabase (Datenbank, Auth, Storage): Unsere Infrastruktur. Die Speicherung erfolgt in der EU-Region (Frankfurt, Deutschland).",
+          "Sentry (Fehleranalyse): Zur Identifikation von App-Abstürzen. IP-Adressen werden vor der Speicherung anonymisiert/maskiert.",
+          "Vercel (Webhosting & Analytics): Für die Website. Analytics erfolgt nur nach explizitem Opt-in.",
+          "Amazon SES / Supabase SMTP: Für den Versand technisch notwendiger E-Mails (z. B. Login-Codes).",
+          "Drittstaatenübermittlung: Soweit Daten außerhalb des EWR verarbeitet werden (z. B. USA), stellen wir das Schutzniveau durch Auftragsverarbeitungsverträge inkl. Standardvertragsklauseln (SCCs) oder das EU-U.S. Data Privacy Framework sicher."
         ]
       },
       "five": {
-        "title": "5. Speicherorte & Löschung",
+        "title": "5. Speicherdauer und Löschung",
         "list": [
-          "App: SQLite für Inhalte; Tokens in Flutter Secure Storage",
-          "Server: Supabase in der EU",
-          "Selbst-Löschung in der App möglich; Kontolöschung führt zur Entfernung der Serverdaten inkl. Backups i. d. R. innerhalb von 30 Tagen",
-          "Logs/Telemetrie werden bis zu 90 Tagen vorgehalten"
+          "Aktive Daten: Ihre Finanz- und Profildaten werden gespeichert, solange Ihr Konto besteht.",
+          "Kontolöschung: Sie können die Löschung direkt in der App auslösen. Alle personenbezogenen Daten werden umgehend vom Produktivserver gelöscht.",
+          "Backups: Aus Sicherheitsgründen verbleiben Daten in verschlüsselten Backups für bis zu 30 Tage, bevor sie endgültig überschrieben werden.",
+          "Protokolldaten: Technische Logs und Telemetriedaten werden in der Regel nach spätestens 90 Tagen gelöscht oder anonymisiert."
         ]
       },
       "six": {
-        "title": "6. Cookies, lokale Speicherung & Einwilligungen",
+        "title": "6. Cookies und lokaler Speicher",
         "list": [
-          "App: keine Drittanbieter-Cookies; lokale Speicherung für Offline-Funktionen",
-          "Website: nur notwendige Cookies standardmäßig; Analytics erst nach Opt-in (Consent-Banner)",
-          "Einwilligungen können jederzeit mit Wirkung für die Zukunft widerrufen werden"
+          "Mobile App: Wir nutzen Secure Storage für Auth-Token und SQLite für die lokale Datenhaltung (Offline-First). Keine Drittanbieter-Werbecookies.",
+          "Website: Es werden standardmäßig nur technisch notwendige Cookies gesetzt. Analyse-Tracking via Vercel erfolgt nur nach Ihrer Zustimmung via Consent-Banner."
         ]
       },
       "seven": {
-        "title": "7. Sicherheit",
+        "title": "7. Datensicherheit",
         "list": [
-          "TLS-Verschlüsselung, rollenbasierte Zugriffe, Supabase RLS/Policies",
-          "Datensparsame Voreinstellungen und regelmäßige Updates"
+          "Verschlüsselung: Alle Datenübertragungen sind per TLS/SSL gesichert.",
+          "Row Level Security (RLS): Unsere Datenbank nutzt strikte RLS-Regeln, die technisch sicherstellen, dass Nutzer nur auf Daten ihrer eigenen tenant_id zugreifen können.",
+          "Zugriffskontrolle: Der administrative Zugriff auf die Infrastruktur ist streng limitiert und durch Multi-Faktor-Authentifizierung (MFA) geschützt."
         ]
       },
       "eight": {
-        "title": "8. Minderjährige",
-        "text": "Der Dienst richtet sich nicht an Kinder unter 16 Jahren. Die Nutzung Minderjähriger erfolgt nur mit Zustimmung der Erziehungsberechtigten."
+        "title": "8. Minderjährigenschutz",
+        "text": "Money Koi richtet sich nicht an Personen unter 16 Jahren. Sollten wir erfahren, dass wir Daten von Kindern unter 16 ohne elterliche Zustimmung gesammelt haben, werden wir diese umgehend löschen."
       },
       "nine": {
-        "title": "9. Betroffenenrechte",
+        "title": "9. Ihre Rechte als Betroffene(r)",
+        "intro": "Ihnen stehen laut DSGVO folgende Rechte zu:",
         "list": [
-          "Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch",
-          "Widerruf erteilter Einwilligungen jederzeit möglich",
-          "Beschwerde bei der Österreichischen Datenschutzbehörse, Barichgasse 40–42, 1030 Wien, dsb{'@'}dsb.gv.at",
-          "Kontakt für Anfragen: {email} (Antwort i. d. R. innerhalb von 3 Werktagen)"
-        ]
+          "Auskunftsrecht: Sie können erfahren, welche Daten wir über Sie speichern.",
+          "Recht auf Berichtigung: Korrektur unrichtiger Daten.",
+          "Recht auf Löschung: Forderung nach Entfernung Ihrer Daten.",
+          "Recht auf Datenübertragbarkeit: Erhalt Ihrer Daten in einem gängigen Format.",
+          "Widerspruchsrecht: Gegen Verarbeitungen auf Basis berechtigter Interessen.",
+          "Beschwerderecht: Sie haben das Recht auf Beschwerde bei der Österreichischen Datenschutzbehörde (Barichgasse 40–42, 1030 Wien, dsb{'@'}dsb.gv.at)."
+        ],
+        "contact_info": "Um diese Rechte auszuüben, kontaktieren Sie uns bitte unter {email}. Wir bearbeiten Anfragen in der Regel innerhalb der gesetzlichen Frist."
       },
       "ten": {
-        "title": "10. Änderungen dieser Erklärung",
-        "text": "Wir passen diese Erklärung bei Bedarf an, etwa bei neuen Funktionen oder Rechtslagen. Stand: {date}."
+        "title": "10. Änderungen dieser Richtlinie",
+        "text": "Wir passen diese Erklärung gelegentlich an (z. B. bei neuen Funktionen). Das Datum der letzten Aktualisierung wird unten aufgeführt. Stand: {date}."
       }
     }
   },
   "terms": {
     "meta": {
-      "title": "Nutzungsbedingungen",
-      "description": "Nutzungsbedingungen für Money Koi: Konto, Daten, Verbote, Haftung, Änderungen und Kontakt."
+      "title": "Nutzungsbedingungen | Money Koi",
+      "description": "Nutzungsbedingungen für die Money Koi App und Website: Kontoverwaltung, Nutzungsregeln, Haftung und Informationen zu Abonnements."
     },
     "header": {
-      "eyebrow": "Rechtliches",
+      "eyebrow": "Rechtlicher Rahmen",
       "title": "Nutzungsbedingungen",
-      "subtitle": "Grundlagen der Nutzung von Money Koi – Geltungsbereich, Konten, Regeln, Haftung und Änderungen."
+      "subtitle": "Die folgenden Bedingungen regeln das Vertragsverhältnis zwischen Ihnen und Money Koi bezüglich der Nutzung unserer Dienste."
     },
     "sections": {
       "one": {
-        "title": "1. Anbieter, Geltungsbereich",
-        "text": "Vertragspartner und Betreiber der App {app} ist {name}, {address}. Diese Bedingungen regeln die Nutzung der mobilen App. Eine Web-Version mit gleichartigen Funktionen ist geplant und wird bei Start von diesen Bedingungen erfasst."
+        "title": "1. Anbieter und Geltungsbereich",
+        "text": "Vertragspartner und Betreiber des Dienstes 'Money Koi' ist Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Österreich (im Folgenden 'Anbieter'). Diese Bedingungen gelten für die mobile Applikation {app} sowie alle damit verbundenen Dienste, einschließlich der zukünftigen Web-Version. Mit der Erstellung eines Kontos erklären Sie sich mit diesen Bedingungen einverstanden."
       },
       "two": {
-        "tag": "Konten",
-        "title": "2. Konto & Anmeldung",
+        "tag": "Konto",
+        "title": "2. Konto, Registrierung und Sicherheit",
         "list": [
-          "Login per E-Mail-OTP und Google OAuth.",
-          "Ein Account kann auf mehreren Geräten genutzt werden.",
-          "Aktuell ist gemeinsame Nutzung innerhalb einer Familie über einen Account möglich; perspektivisch werden getrennte Familien-Accounts innerhalb eines gemeinsamen Tenants unterstützt.",
-          "Es gibt keine starre Altersgrenze; die App richtet sich faktisch an volljährige Nutzer:innen. Für Minderjährige ist die Nutzung nur mit Zustimmung der Erziehungsberechtigten zulässig."
+          "Die Registrierung erfolgt via E-Mail-OTP (Magic Link) oder Google OAuth. Sie sind dafür verantwortlich, Ihre Zugangsdaten vertraulich zu behandeln.",
+          "Ein Konto ist an eine Einzelperson gebunden, kann aber auf mehreren Geräten derselben Person genutzt werden.",
+          "Gemeinsame Nutzung: Derzeit kann ein Haushalt über ein gemeinsam genutztes Konto verwaltet werden. Zukünftige Updates werden separate Benutzerprofile innerhalb eines 'Tenants' (Haushalts) ermöglichen.",
+          "Der Dienst ist für Nutzer ab 16 Jahren bestimmt. Minderjährige dürfen die App nur mit der ausdrücklichen Zustimmung ihrer Erziehungsberechtigten nutzen."
         ]
       },
       "three": {
-        "tag": "Daten",
-        "title": "3. Inhalte & Daten der Nutzer:innen",
+        "tag": "Inhalte",
+        "title": "3. Nutzerinhalte und unzulässiges Verhalten",
         "list": [
-          "Verarbeitete Daten: Login-Daten (E-Mail), Profil-Einstellungen, Konten, Kategorien, Transaktionen.",
-          "Unzulässig sind rechtswidrige, irreführende oder schädliche Inhalte. Automatisiertes Massenerfassen, Scraping oder Sicherheitsumgehung ist verboten.",
-          "Ein Datenexport ist derzeit nicht verfügbar und kann später ergänzt werden."
+          "Sie behalten alle Rechte an den von Ihnen eingegebenen Daten (Buchungen, Kategorien, Kontonamen).",
+          "Unzulässige Nutzung: Es ist untersagt, die App für rechtswidrige Zwecke zu nutzen, schädlichen Code hochzuladen oder zu versuchen, Daten automatisiert (Scraping) zu erfassen, wenn dies die Infrastruktur belastet.",
+          "Rechtswidrige oder irreführende Inhalte sind streng verboten. Der Anbieter behält sich das Recht vor, Inhalte zu entfernen oder Konten bei Verstößen zu sperren."
         ]
       },
       "four": {
         "tag": "Betrieb",
-        "title": "4. Leistung, Verfügbarkeit, Support",
+        "title": "4. Verfügbarkeit und Support",
         "list": [
-          "Bereitstellung nach Best-Effort, ohne Zusage permanenter Verfügbarkeit oder Fehlerfreiheit.",
-          "Es erfolgen regelmäßige Sicherungen; ein Anspruch auf vollständige Wiederherstellung besteht nicht.",
-          "Support per E-Mail: {email}. Antwort in der Regel innerhalb von drei Werktagen.",
-          "Offline-First: Änderungen werden bei bestehender Verbindung automatisch im Hintergrund synchronisiert."
+          "Der Dienst wird nach bestem Bemühen ('best effort') bereitgestellt. Wir streben eine hohe Verfügbarkeit an, garantieren jedoch keinen ununterbrochenen Betrieb.",
+          "Support erfolgt auf freiwilliger Basis per E-Mail ({email}). Wir bemühen uns um eine Antwort innerhalb von 3 Werktagen.",
+          "Offline-First: Die App speichert Daten lokal und synchronisiert diese bei bestehender Internetverbindung. Der Anbieter haftet nicht für Datenverluste, die durch ein Versagen des lokalen Endgeräts entstehen."
         ]
       },
       "five": {
         "tag": "Preise",
-        "title": "5. Preise, Zahlungen, Widerruf",
+        "title": "5. Preise und Abonnement-Modell",
         "list": [
-          "Der Dienst ist derzeit kostenlos und werbefrei.",
-          "Ein Abo-Modell ist geplant (voraussichtlich €0,99/Monat) nach Abschluss der ersten Ausbauphase. Abwicklung ggf. über App-Stores.",
-          "Bei Einführung kostenpflichtiger Leistungen werden Informationen zu Preisen, Laufzeiten, Kündigung und Widerrufsrechten vorab bereitgestellt."
+          "Basis-Nutzung: Die App ist derzeit kostenlos und werbefrei.",
+          "Zukünftige Abonnements: Es ist geplant, ein Abonnement-Modell (ca. 0,99 €/Monat) für erweiterte Funktionen einzuführen. Sie werden vorab informiert und müssen kostenpflichtigen Diensten aktiv zustimmen.",
+          "Abrechnung über Drittanbieter: Bei Käufen über den Apple App Store oder Google Play Store gelten zusätzlich die Zahlungsbedingungen der jeweiligen Plattformen."
         ]
       },
       "six": {
-        "tag": "Drittanbieter",
-        "title": "6. Drittanbieter & Übermittlungen",
-        "list": [
-          "Supabase als Infrastruktur/Backend (EU-Region).",
-          "Website-Hosting und Analytics über Vercel.",
-          "Sentry Standard-Telemetrie für Stabilität; in der App wird eine Opt-out-Möglichkeit angeboten.",
-          "Geplanter E-Mail-Versanddienst für Login-Mails (z. B. Amazon-Service) kann später ergänzt werden."
-        ]
+        "tag": "Widerruf",
+        "title": "6. Widerrufsrecht",
+        "text": "Als Verbraucher in der EU haben Sie das Recht, binnen 14 Tagen ohne Angabe von Gründen von diesem Vertrag zurückzutreten. Bei digitalen Inhalten stimmen Sie jedoch zu, dass das Widerrufsrecht erlischt, sobald mit der Ausführung des Dienstes (z. B. erste Datensynchronisation) mit Ihrer ausdrücklichen Zustimmung begonnen wurde."
       },
       "seven": {
-        "tag": "IP",
+        "tag": "Urheberrecht",
         "title": "7. Geistiges Eigentum",
-        "list": [
-          "App, Inhalte, Designs und Marken verbleiben bei Gerald Gmainer.",
-          "Eine Nutzung von Logos und Screenshots für Presse/Reviews ist in angemessenem Rahmen zulässig, sofern korrekt auf Money Koi verwiesen wird."
-        ]
+        "text": "Das Design, der Quellcode, die Logos und Marken von Money Koi bleiben ausschließliches Eigentum von Gerald Gmainer. Die Nutzung von Logos für Rezensionen oder Presse ist gestattet, sofern Money Koi korrekt referenziert wird."
       },
       "eight": {
         "tag": "Regeln",
-        "title": "8. Zulässige Nutzung",
+        "title": "8. Zulässige Nutzung und Verbote",
         "list": [
-          "Verboten sind rechtswidrige Inhalte, Belästigung, Missbrauch der Dienste, Umgehung technischer Schutzmaßnahmen, unautorisierte Automatisierung oder Weitergabe von Zugangsdaten.",
-          "Kommerzieller Wiederverkauf oder Vermietung der Zugänge ist nicht gestattet."
+          "Belästigungen, Missbrauch der Dienste sowie das Umgehen technischer Schutzmaßnahmen sind strengstens untersagt.",
+          "Der kommerzielle Weiterverkauf oder die Vermietung des Zugangs zum Dienst ist ohne schriftliche Zustimmung nicht gestattet."
         ]
       },
       "nine": {
-        "tag": "Beendigung",
-        "title": "9. Kündigung & Sperre",
+        "tag": "Kündigung",
+        "title": "9. Kündigung und Sperrung",
         "list": [
-          "Nutzer:innen können ihr Konto jederzeit kündigen. Daten werden in der Regel innerhalb von 30 Tagen gelöscht; Sicherungskopien können für begrenzte Zeit fortbestehen.",
-          "Bei schweren Verstößen kann der Zugang fristlos gesperrt oder beendet werden."
+          "Nutzer können ihr Konto jederzeit über die Löschfunktion in der App kündigen. Daten werden in der Regel innerhalb von 30 Tagen gelöscht.",
+          "Der Anbieter kann den Zugang bei schwerwiegenden Verstößen gegen diese Bedingungen fristlos sperren oder kündigen."
         ]
       },
       "ten": {
         "tag": "Haftung",
-        "title": "10. Haftung & Gewährleistung",
+        "title": "10. Haftung und Gewährleistung",
         "list": [
-          "Es wird keine Garantie für unterbrechungsfreien oder fehlerfreien Betrieb übernommen.",
-          "Die Haftung für Vorsatz, grobe Fahrlässigkeit sowie für Personenschäden bleibt unberührt. Im Übrigen ist die Haftung auf vorhersehbare, vertragstypische Schäden begrenzt."
+          "Der Anbieter haftet unbeschränkt für Vorsatz und grobe Fahrlässigkeit. Bei leichter Fahrlässigkeit ist die Haftung auf vertragstypische, vorhersehbare Schäden begrenzt.",
+          "Der Anbieter übernimmt keine Verantwortung für finanzielle Entscheidungen, die der Nutzer auf Basis der in der App angezeigten Daten trifft."
         ]
       },
       "eleven": {
         "tag": "Änderungen",
         "title": "11. Änderungen der Bedingungen und des Dienstes",
         "list": [
-          "Sachlich gerechtfertigte Anpassungen dieser Bedingungen oder des Dienstes können vorgenommen werden.",
-          "Wesentliche Änderungen werden mindestens 14 Tage vor Inkrafttreten in der App oder per E-Mail angekündigt. Bei Widerspruch besteht das Recht zur fristlosen Kündigung des Kontos.",
-          "Reine Klarstellungen, Fehlerbehebungen und vorteilhafte Änderungen gelten sofort."
+          "Wir können diese Bedingungen aus rechtlichen, regulatorischen oder technischen Gründen anpassen.",
+          "Wesentliche Änderungen werden mindestens 14 Tage vor Inkrafttreten in der App oder per E-Mail angekündigt.",
+          "Reine Fehlerkorrekturen, Sicherheits-Updates oder für den Nutzer vorteilhafte Änderungen gelten sofort."
         ]
       },
       "twelve": {
         "tag": "Recht",
-        "title": "12. Anwendbares Recht, Sprache",
+        "title": "12. Anwendbares Recht und Sprache",
         "list": [
-          "Es gilt österreichisches Recht unter Wahrung zwingender Verbraucherschutzbestimmungen des Wohnsitzstaates.",
-          "Vertragssprache ist Deutsch. Übersetzungen dienen der Verständlichkeit."
+          "Es gilt österreichisches Recht unter Ausschluss der Verweisungsnormen und des UN-Kaufrechts.",
+          "Die Vertragssprache ist Deutsch. Übersetzungen dienen lediglich dem besseren Verständnis; im Zweifelsfall gilt die deutsche Fassung."
         ]
       },
       "thirteen": {
         "tag": "Kontakt",
-        "title": "13. Kontakt",
+        "title": "13. Kontakt und Impressum",
         "list": [
-          "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Österreich",
+          "Bei Fragen zu diesen Bedingungen oder zum Dienst: Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Österreich.",
           "E-Mail: {email}"
         ]
       }

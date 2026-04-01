@@ -319,235 +319,227 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy",
-      "description": "Privacy policy for Money Koi: Responsible party, data types, purposes, processors, storage, deletion, rights, and contact."
+      "title": "Privacy Policy | Money Koi",
+      "description": "Comprehensive Privacy Policy for Money Koi. Detailed information on data processing, GDPR compliance, third-party processors, and your rights as a user."
     },
     "header": {
-      "eyebrow": "Privacy",
-      "title": "Your Data. Clear and respectful.",
-      "subtitle": "This privacy policy applies to the Money Koi app and – as soon as available – the web version."
+      "eyebrow": "Data Protection",
+      "title": "Privacy Policy",
+      "subtitle": "This privacy policy provides a detailed overview of how Money Koi processes personal data within our Flutter mobile application and our Nuxt-based web presence."
     },
     "sections": {
       "one": {
-        "title": "1. Controller & Scope",
-        "responsible": "Responsible: Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria ·",
-        "email": "Email:",
-        "scope": "Scope: Mobile app {app} and future web version with similar functions."
+        "title": "1. Controller and Contact Information",
+        "responsible": "The responsible party (Controller) within the meaning of the General Data Protection Regulation (GDPR) and the Austrian Data Protection Act (DSG) is:",
+        "details": "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria.",
+        "email_label": "Direct contact for data protection inquiries:",
+        "scope": "This policy applies to the mobile application '{app}' (available on iOS and Android) and the associated web domains used for promotion and service delivery."
       },
       "two": {
-        "title": "2. Processed Data Types",
+        "title": "2. Categories of Processed Data",
+        "intro": "We process data that you actively provide and data that is technically required for the operation of the service.",
         "auth": {
-          "title": "Authentication & Profile",
+          "title": "2.1 Authentication & Identity Data",
           "list": [
-            "Email for OTP login; for Google OAuth: Identifier (e.g., sub), email",
-            "Password hash (email login only)",
-            "Metadata: tenant_id, profile_id, role",
-            "Profile: display_name, avatar_url, settings (e.g., currency)"
+            "Email Address: Required for Magic Link (OTP) login and account management.",
+            "Google OAuth Data: If you use Google Sign-In, we process your unique Google Identifier (sub) and email address. We do not access your Google Drive, contacts, or other private files. This data is used solely for identity verification.",
+            "Password Metadata: Salted and hashed password strings (for email/password login only); the plain-text password is never stored.",
+            "Internal Identifiers: tenant_id, profile_id, and assigned user roles for system logic."
           ]
         },
         "content": {
-          "title": "Household & Content Data",
+          "title": "2.2 User-Generated Content (Financial Data)",
           "list": [
-            "Household (tenant): Name",
-            "Accounts: Name, icon_name, icon_color",
-            "Categories: Name, type (income/outcome), parent_id, icons",
-            "Bookings: date, description, amount, links to account/category"
+            "Profile Information: Display name, avatar URL, and localized settings (e.g., preferred currency, language).",
+            "Household Data (Tenants): Names and structural grouping of shared or private households.",
+            "Account & Category Data: Custom names, icons, and color hex-codes assigned by the user.",
+            "Transaction Records: Date, description, amount, and relational links to accounts or categories. All financial data is entered manually by the user; no automated bank synchronization (PSD2) is performed."
           ]
         },
         "tech": {
-          "title": "Technical & Sync Data",
+          "title": "2.3 Technical, Metadata & Sync Logs",
           "list": [
-            "Timestamps: created_at, updated_at, deleted_at",
-            "Sync log: profile_id, table_name, row_id, changed_at",
-            "Server logs, App/OS version for operation and error analysis"
-          ]
-        },
-        "web": {
-          "title": "Website (future)",
-          "list": [
-            "Necessary cookies/techniques for operation",
-            "Analytics only after explicit consent (Opt-in)"
+            "Synchronization Logs: profile_id, affected table names, and timestamps of changes to ensure offline-to-online consistency.",
+            "System Metadata: created_at, updated_at, and deleted_at timestamps for all records.",
+            "Device Information: App version, operating system version, and device type for troubleshooting and stability analysis."
           ]
         }
       },
       "three": {
-        "title": "3. Purposes and Legal Bases (Art. 6 GDPR)",
+        "title": "3. Legal Bases for Processing",
+        "intro": "We process your data strictly according to the provisions of the GDPR:",
         "list": [
-          "Provision and use of the app, account management, synchronization, data management (Art. 6(1)(b) – contract/contract-like relationship)",
-          "Stability, security, error analysis, abuse and failure prevention (Art. 6(1)(f) – legitimate interest)",
-          "Website analytics only with consent (Art. 6(1)(a)); revocable"
+          "Contractual Performance (Art. 6(1)(b) GDPR): Processing is necessary to provide the core app functions, such as data synchronization, account management, and multi-device support.",
+          "Legitimate Interest (Art. 6(1)(f) GDPR): To ensure network and information security, perform error analysis (Sentry), and prevent fraudulent use of our services.",
+          "Consent (Art. 6(1)(a) GDPR): For optional website analytics (Vercel) or other features where you have given explicit permission. You may revoke this consent at any time."
         ]
       },
       "four": {
-        "title": "4. Recipients & Processors",
+        "title": "4. Recipients and Data Processors",
+        "intro": "To provide our services, we use specialized third-party providers who act as data processors:",
         "list": [
-          "Supabase (Auth, Postgres, Storage; EU region, e.g., Frankfurt)",
-          "Sentry for app/web error analysis; in-app opt-out planned",
-          "Vercel for website hosting/analytics; analytics only after opt-in",
-          "Email delivery via Supabase SMTP; planned: Amazon SES for OTP emails",
-          "Data transfers to third countries only if necessary and with appropriate guarantees (e.g., SCCs/DPF)"
+          "Supabase (Database, Auth, Storage): Our primary infrastructure provider. Data is stored in the EU region (Frankfurt, Germany).",
+          "Sentry (Functional Error Tracking): Used to identify crashes and bugs in the Flutter app. IP addresses are masked or anonymized where technically possible.",
+          "Vercel (Web Hosting & Analytics): For our marketing website. Analytics are strictly opt-in and GDPR-compliant.",
+          "Amazon SES / Supabase SMTP: For the delivery of essential transactional emails (e.g., login codes).",
+          "International Transfers: Where data is processed outside the EEA (e.g., USA), we ensure a high level of protection via Data Processing Agreements (DPA) and the application of Standard Contractual Clauses (SCCs) or the EU-U.S. Data Privacy Framework."
         ]
       },
       "five": {
-        "title": "5. Storage Locations & Deletion",
+        "title": "5. Storage Duration and Deletion",
         "list": [
-          "App: SQLite for content; tokens in Flutter Secure Storage",
-          "Server: Supabase in the EU",
-          "Self-deletion possible in the app; account deletion leads to removal of server data incl. backups usually within 30 days",
-          "Logs/telemetry are kept for up to 90 days"
+          "Active Data: Your financial records and profile data are stored for as long as your account is active.",
+          "Account Deletion: You can trigger full account deletion within the app settings. All associated personal data on the production server will be deleted immediately.",
+          "Backup Retention: For disaster recovery purposes, encrypted backups may persist for up to 30 days before being overwritten.",
+          "Technical Logs: Server logs and telemetry data are generally deleted or anonymized after 90 days."
         ]
       },
       "six": {
-        "title": "6. Cookies, Local Storage & Consents",
+        "title": "6. Cookies and Local Storage",
         "list": [
-          "App: no third-party cookies; local storage for offline functions",
-          "Website: only necessary cookies by default; analytics only after opt-in (consent banner)",
-          "Consents can be revoked at any time with effect for the future"
+          "Mobile App: We use Secure Storage (KeyStore/Keychain) for authentication tokens and SQLite for local data persistence (offline-first capability). No third-party tracking cookies are used in the app.",
+          "Website: We use only strictly necessary technical cookies by default. Analytical tracking via Vercel only occurs if you interact with our consent banner and grant explicit approval."
         ]
       },
       "seven": {
-        "title": "7. Security",
+        "title": "7. Data Security Measures",
         "list": [
-          "TLS encryption, role-based access, Supabase RLS/policies",
-          "Privacy-friendly defaults and regular updates"
+          "End-to-End Encryption: Data transfer between the app and server is secured via TLS/SSL encryption.",
+          "Row Level Security (RLS): Our database uses strict RLS policies to ensure that users can only access data belonging to their specific tenant_id.",
+          "Access Control: Administrative access to backend infrastructure is strictly limited and secured via Multi-Factor Authentication (MFA)."
         ]
       },
       "eight": {
-        "title": "8. Minors",
-        "text": "The service is not directed at children under 16. Use by minors only with the consent of legal guardians."
+        "title": "8. Protection of Minors",
+        "text": "Money Koi is not intended for users under the age of 16. If we become aware that we have collected personal data from a child under 16 without parental consent, we will take immediate steps to delete such information."
       },
       "nine": {
-        "title": "9. Data Subject Rights",
+        "title": "9. Your Rights as a Data Subject",
+        "intro": "Under the GDPR, you have the following rights regarding your personal data:",
         "list": [
-          "Access, rectification, erasure, restriction, data portability, objection",
-          "Revocation of granted consents possible at any time",
-          "Complaint to the Austrian Data Protection Authority, Barichgasse 40–42, 1030 Vienna, dsb{'@'}dsb.gv.at",
-          "Contact for inquiries: {email} (response usually within 3 business days)"
-        ]
+          "Right of Access: Request a copy of the data we hold about you.",
+          "Right to Rectification: Correct inaccurate or incomplete data.",
+          "Right to Erasure ('Right to be Forgotten'): Request the deletion of your data.",
+          "Right to Data Portability: Receive your data in a structured, commonly used, and machine-readable format.",
+          "Right to Object: Object to processing based on legitimate interests.",
+          "Right to Lodge a Complaint: You have the right to complain to the Austrian Data Protection Authority (Barichgasse 40–42, 1030 Vienna, dsb{'@'}dsb.gv.at)."
+        ],
+        "contact_info": "To exercise these rights, please contact us at {email}. We will respond to your request within the statutory period (usually 30 days)."
       },
       "ten": {
-        "title": "10. Changes to this Policy",
-        "text": "We adapt this policy as necessary, e.g., for new functions or legal situations. Status: {date}."
+        "title": "10. Updates to this Policy",
+        "text": "We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, technical, or regulatory reasons. The 'Last Updated' date at the bottom will reflect the latest version. Status: {date}."
       }
     }
   },
   "terms": {
     "meta": {
-      "title": "Terms of Use",
-      "description": "Terms of use for Money Koi: account, data, prohibitions, liability, changes, and contact."
+      "title": "Terms of Use | Money Koi",
+      "description": "Terms of Use for the Money Koi app and website: Account management, usage rules, liability, and subscription information."
     },
     "header": {
-      "eyebrow": "Legal",
+      "eyebrow": "Legal Framework",
       "title": "Terms of Use",
-      "subtitle": "Basics of using Money Koi – scope, accounts, rules, liability, and changes."
+      "subtitle": "The following terms govern the contractual relationship between you and Money Koi regarding the use of our services."
     },
     "sections": {
       "one": {
-        "title": "1. Provider, Scope",
-        "text": "Contractual partner and operator of the app {app} is {name}, {address}. These terms govern the use of the mobile app. A web version with similar functions is planned and will be covered by these terms upon launch."
+        "title": "1. Provider and Scope",
+        "text": "The contractual partner and operator of the service 'Money Koi' is Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria (hereinafter 'Provider'). These terms apply to the mobile application {app} and all associated services, including the future web version. By creating an account, you agree to these terms."
       },
       "two": {
         "tag": "Accounts",
-        "title": "2. Account & Registration",
+        "title": "2. Account, Registration, and Security",
         "list": [
-          "Login via Email OTP and Google OAuth.",
-          "An account can be used on multiple devices.",
-          "Currently, shared use within a family is possible via one account; in the future, separate family accounts within a shared tenant will be supported.",
-          "There is no rigid age limit; the app is de facto aimed at adult users. Use by minors is only permitted with the consent of legal guardians."
+          "Registration occurs via Email OTP (Magic Link) or Google OAuth. You are responsible for maintaining the confidentiality of your login credentials.",
+          "An account is tied to an individual but can be used across multiple devices owned by that individual.",
+          "Shared use: Currently, a household can be managed via a shared account. Future updates will introduce separate user profiles within a 'tenant' (household).",
+          "The service is intended for users aged 16 and older. Minors may only use the app with the explicit consent of their legal guardians."
         ]
       },
       "three": {
-        "tag": "Data",
-        "title": "3. Content & User Data",
+        "tag": "Content",
+        "title": "3. User Content and Prohibited Conduct",
         "list": [
-          "Processed data: login data (email), profile settings, accounts, categories, transactions.",
-          "Illegal, misleading, or harmful content is prohibited. Automated mass data entry, scraping, or bypassing security is forbidden.",
-          "Data export is currently not available and may be added later."
+          "You retain all rights to the data you enter (bookings, categories, account names).",
+          "Prohibited use: You may not use the app for illegal purposes, upload harmful code, or attempt to scrape/automate data entry in a way that stresses our infrastructure.",
+          "Illegal or misleading content is strictly prohibited. The Provider reserves the right to remove content or suspend accounts that violate these rules."
         ]
       },
       "four": {
         "tag": "Operation",
-        "title": "4. Performance, Availability, Support",
+        "title": "4. Service Availability and Support",
         "list": [
-          "Provision on a best-effort basis, without a guarantee of permanent availability or being error-free.",
-          "Regular backups are performed; there is no claim to full restoration.",
-          "Support via email: {email}. Response usually within three business days.",
-          "Offline-First: Changes are automatically synchronized in the background when a connection is established."
+          "The service is provided on a 'best effort' basis. While we strive for high uptime, we do not guarantee uninterrupted availability.",
+          "Support is provided voluntarily via email ({email}). We aim to respond within 3 business days.",
+          "Offline-First: The app stores data locally and syncs with the server when an internet connection is available. The Provider is not liable for data loss resulting from local device failure."
         ]
       },
       "five": {
         "tag": "Prices",
-        "title": "5. Prices, Payments, Cancellation",
+        "title": "5. Fees and Subscription Model",
         "list": [
-          "The service is currently free and ad-free.",
-          "A subscription model is planned (approx. €0.99/month) after completion of the first expansion phase. Processing via app stores where applicable.",
-          "When paid services are introduced, information regarding prices, terms, termination, and cancellation rights will be provided in advance."
+          "Basic Use: The app is currently free of charge and ad-free.",
+          "Future Subscriptions: We plan to introduce a subscription model (approx. €0.99/month). You will be notified in advance and must actively opt-in to any paid services.",
+          "Third-Party Billing: If a subscription is purchased through the Apple App Store or Google Play Store, the payment terms of those platforms apply."
         ]
       },
       "six": {
-        "tag": "Third-party",
-        "title": "6. Third-party Providers & Transfers",
-        "list": [
-          "Supabase as infrastructure/backend (EU region).",
-          "Website hosting and analytics via Vercel.",
-          "Sentry standard telemetry for stability; an opt-out option is offered within the app.",
-          "Planned email delivery service for login emails (e.g., Amazon service) may be added later."
-        ]
+        "tag": "Withdrawal",
+        "title": "6. Right of Withdrawal (Widerrufsrecht)",
+        "text": "As a consumer in the EU, you have the right to withdraw from this contract within 14 days. However, for digital content, you agree that the right of withdrawal expires once the performance of the service has begun (e.g., first data sync) with your express consent."
       },
       "seven": {
         "tag": "IP",
         "title": "7. Intellectual Property",
-        "list": [
-          "App, content, designs, and trademarks remain the property of Gerald Gmainer.",
-          "Use of logos and screenshots for press/reviews is permitted within reasonable limits, provided Money Koi is correctly referenced."
-        ]
+        "text": "The design, source code, logos, and trademarks of Money Koi remain the exclusive property of Gerald Gmainer. Use of logos for reviews is permitted if Money Koi is correctly referenced."
       },
       "eight": {
         "tag": "Rules",
-        "title": "8. Permissible Use",
+        "title": "8. Permissible Use and Prohibitions",
         "list": [
-          "Prohibited are illegal content, harassment, abuse of services, bypassing technical protection measures, unauthorized automation, or sharing access data.",
-          "Commercial resale or rental of access is not permitted."
+          "Harassment, abuse of services, and bypassing technical protection measures are strictly forbidden.",
+          "Commercial resale or rental of access to the service is not permitted without written consent."
         ]
       },
       "nine": {
         "tag": "Termination",
-        "title": "9. Termination & Suspension",
+        "title": "9. Termination and Suspension",
         "list": [
-          "Users can terminate their account at any time. Data is generally deleted within 30 days; backup copies may persist for a limited time.",
-          "In the event of serious violations, access may be suspended or terminated without notice."
+          "Users may terminate their account at any time via the in-app deletion function. Data is generally deleted within 30 days.",
+          "The Provider may suspend or terminate access without notice in the event of serious violations of these terms."
         ]
       },
       "ten": {
         "tag": "Liability",
-        "title": "10. Liability & Warranty",
+        "title": "10. Liability and Warranty",
         "list": [
-          "No guarantee is given for uninterrupted or error-free operation.",
-          "Liability for intent, gross negligence, as well as personal injury remains unaffected. Otherwise, liability is limited to foreseeable, contract-typical damages."
+          "The Provider is liable for intent and gross negligence. For slight negligence, liability is limited to typical, foreseeable damages.",
+          "The Provider assumes no responsibility for financial decisions made based on the data displayed in the app."
         ]
       },
       "eleven": {
         "tag": "Changes",
-        "title": "11. Changes to Terms and Service",
+        "title": "11. Amendments to Terms and Service",
         "list": [
-          "Factually justified adjustments to these terms or the service may be made.",
-          "Significant changes will be announced at least 14 days before taking effect in the app or via email. In case of objection, the right to terminate the account without notice exists.",
-          "Pure clarifications, bug fixes, and beneficial changes apply immediately."
+          "We may update these terms for legal or technical reasons to reflect the evolution of the service.",
+          "Significant changes will be announced at least 14 days before taking effect via the app or email.",
+          "Pure bug fixes, security updates, or changes purely beneficial to the user apply immediately."
         ]
       },
       "twelve": {
         "tag": "Law",
-        "title": "12. Applicable Law, Language",
+        "title": "12. Applicable Law and Language",
         "list": [
-          "Austrian law applies, while maintaining mandatory consumer protection provisions of the state of residence.",
-          "The contract language is German. Translations are provided for clarity."
+          "This contract is governed by Austrian law, excluding its conflict of law rules and the UN Convention on Contracts for the International Sale of Goods.",
+          "The contract language is German. Any translations are provided for convenience and clarity only."
         ]
       },
       "thirteen": {
         "tag": "Contact",
-        "title": "13. Contact",
+        "title": "13. Contact and Impressum",
         "list": [
-          "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria",
+          "For inquiries regarding these terms or the service: Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria.",
           "Email: {email}"
         ]
       }
