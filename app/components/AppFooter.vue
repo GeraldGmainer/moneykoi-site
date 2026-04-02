@@ -5,13 +5,19 @@
         <nav class="order-1 lg:order-2 w-full sm:w-auto">
           <ul class="flex flex-wrap justify-center gap-x-6 gap-y-4">
             <li class="py-4 lg:py-0">
-              <NuxtLink class="hover:text-slate-800" to="/legal/terms">{{ $t('footer.terms') }}</NuxtLink>
+              <NuxtLink :to="localePath('/legal/terms')" class="hover:text-slate-800">
+                {{ $t('footer.terms') }}
+              </NuxtLink>
             </li>
             <li class="py-4 lg:py-0">
-              <NuxtLink class="hover:text-slate-800" to="/legal/imprint">{{ $t('footer.imprint') }}</NuxtLink>
+              <NuxtLink :to="localePath('/legal/imprint')" class="hover:text-slate-800">
+                {{ $t('footer.imprint') }}
+              </NuxtLink>
             </li>
             <li class="py-4 lg:py-0">
-              <NuxtLink class="hover:text-slate-800" to="/legal/privacy">{{ $t('footer.privacy') }}</NuxtLink>
+              <NuxtLink :to="localePath('/legal/privacy')" class="hover:text-slate-800">
+                {{ $t('footer.privacy') }}
+              </NuxtLink>
             </li>
           </ul>
         </nav>
@@ -25,4 +31,5 @@
 </template>
 
 <script lang="ts" setup>
+const localePath = useLocalePath()
 </script>

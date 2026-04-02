@@ -8,9 +8,9 @@
 
       <div class="hidden sm:flex items-center gap-8 text-base font-medium text-slate-600">
         <nav class="flex gap-8">
-          <NuxtLink class="transition hover:text-slate-900" to="/features">{{ $t('header.features') }}</NuxtLink>
-          <NuxtLink class="transition hover:text-slate-900" to="/roadmap">{{ $t('header.roadmap') }}</NuxtLink>
-          <NuxtLink class="transition hover:text-slate-900" to="/contact">{{ $t('header.contact') }}</NuxtLink>
+          <NuxtLink :to="localePath('/features')" class="transition hover:text-slate-900">{{ $t('header.features') }}</NuxtLink>
+          <NuxtLink :to="localePath('/roadmap')" class="transition hover:text-slate-900">{{ $t('header.roadmap') }}</NuxtLink>
+          <NuxtLink :to="localePath('/contact')" class="transition hover:text-slate-900">{{ $t('header.contact') }}</NuxtLink>
         </nav>
 
         <div class="flex items-center gap-2 border-l border-slate-200 pl-8">
@@ -87,6 +87,7 @@
 </template>
 
 <script lang="ts" setup>
+const localePath = useLocalePath()
 const {locale, setLocale} = useI18n()
 const open = ref(false)
 const route = useRoute()
