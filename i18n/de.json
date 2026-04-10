@@ -318,7 +318,7 @@
         "title": "1. Verantwortlicher und Kontakt",
         "responsible": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und des österreichischen Datenschutzgesetzes (DSG) ist:",
         "details": "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Österreich.",
-        "email_label": "Kontakt für datenschutzrechtliche Anfragen:",
+        "email": "Kontakt für datenschutzrechtliche Anfragen:",
         "scope": "Diese Erklärung gilt für die mobile Applikation '{app}' (iOS und Android) sowie die zugehörige Webpräsenz zur Bereitstellung und Bewerbung des Dienstes."
       },
       "two": {

@@ -332,7 +332,7 @@
         "title": "1. Controller and Contact Information",
         "responsible": "The responsible party (Controller) within the meaning of the General Data Protection Regulation (GDPR) and the Austrian Data Protection Act (DSG) is:",
         "details": "Gerald Gmainer, Am Platzl 3 / 3, 4451 Garsten, Austria.",
-        "email_label": "Direct contact for data protection inquiries:",
+        "email": "Direct contact for data protection inquiries:",
         "scope": "This policy applies to the mobile application '{app}' (available on iOS and Android) and the associated web domains used for promotion and service delivery."
       },
       "two": {

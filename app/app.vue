@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import {computed} from 'vue'
 import {Analytics} from '@vercel/analytics/nuxt'
 import AnalyticsConsent from './components/AnalyticsConsent.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppHeader from './components/AppHeader.vue'
 
+const localePath = useLocalePath()
 const color = computed(() => 'white')
 
 const head = useLocaleHead({
@@ -45,7 +47,7 @@ const {consent, decided, ready, accept, decline} = useAnalyticsConsent()
         class="flex-1 pt-[calc(env(safe-area-inset-top)+60px)] sm:pt-[calc(env(safe-area-inset-top)+96px)] lg:pt-[128px] min-h-[calc(100svh-56px)]"
         style="content-visibility:auto; contain-intrinsic-size:1px 1000px"
     >
-      <NuxtPage/>
+      <NuxtPage :key="$route.fullPath"/>
     </main>
     <div class="mt-auto">
       <AppFooter/>
