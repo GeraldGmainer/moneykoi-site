@@ -534,5 +534,98 @@
       "alphaNote": "Alpha/Beta-Hinweis: Money Koi befindet sich in einem frühen Entwicklungsstadium. Funktionen, Schnittstellen und Integrationen können sich ändern.",
       "status": "Stand: {date}"
     }
+  },
+  "faq": {
+    "meta": {
+      "title": "FAQ & Support | Money Koi",
+      "description": "Erhalte Hilfe zu Money Koi. Antworten zu Offline-Synchronisierung, Konten, Kategorien und Fehlerbehebung."
+    },
+    "header": {
+      "eyebrow": "Support",
+      "title": "Wie kann ich dir helfen?",
+      "subtitle": "Hier findest du Antworten auf die häufigsten Fragen zu den Funktionen, der Synchronisierung und der Fehlerbehebung von Money Koi."
+    },
+    "sections": {
+      "sync": {
+        "title": "Sync, Offline & Daten",
+        "questions": [
+          {
+            "q": "Wie funktioniert die Offline-Synchronisierung?",
+            "a": "Money Koi ist als „Offline-First“-App konzipiert. Deine Daten werden lokal auf deinem Gerät in einer sicheren Datenbank (SQLite) gespeichert, sodass du Transaktionen sofort und auch ohne Internetverbindung erfassen kannst. Die App synchronisiert sich automatisch im Hintergrund, sobald du sie öffnest oder wenn Änderungen auf dem Server vorgenommen werden. Ein kleiner Synchronisierungsbalken am unteren Bildschirmrand zeigt die Netzwerkaktivität an."
+          },
+          {
+            "q": "Was passiert, wenn ich Daten auf zwei Offline-Geräten gleichzeitig bearbeite?",
+            "a": "Wenn du dieselbe Transaktion auf zwei verschiedenen Geräten bearbeitest, während beide offline sind, gilt bei Money Koi die Regel: „Die letzte Änderung gewinnt“. Sobald beide Geräte wieder mit dem Internet verbunden sind, überschreibt die aktuellste Änderung die ältere Version."
+          },
+          {
+            "q": "Sind meine Finanzdaten sicher und verschlüsselt?",
+            "a": "Ja. Deine Authentifizierungsdaten werden im sicheren Speicher deines Geräts (Keychain/KeyStore) aufbewahrt. Wenn deine Daten mit unseren Supabase-Servern synchronisiert werden, erfolgt die Übertragung verschlüsselt. Aktuell lädt die App deinen gesamten Verlauf auf dein Gerät herunter, um die Offline-Nutzung zu ermöglichen."
+          },
+          {
+            "q": "Ich habe versehentlich eine Transaktion gelöscht. Kann ich das rückgängig machen?",
+            "a": "Nein, es gibt derzeit keine „Rückgängig“-Funktion oder einen Papierkorb. Wenn du eine Transaktion oder Kategorie löschst, wird diese zwar zur Systemintegrität auf unseren Servern „soft-deleted“, ist aber für dich nicht mehr sichtbar oder wiederherstellbar. Bitte sei vorsichtig beim Löschen von Einträgen."
+          }
+        ]
+      },
+      "accounts": {
+        "title": "Konten & Salden",
+        "questions": [
+          {
+            "q": "Warum muss ich Konten verwenden?",
+            "a": "Konten (wie Bargeld, Bank, Sparen oder Kreditkarte) helfen dir, deine Buchungen unabhängig von ihrer Kategorie zusammenzufassen. So erhältst du einen klaren Überblick darüber, wo sich dein Geld physisch befindet, passend zu deinen realen Kontoständen."
+          },
+          {
+            "q": "Kann ich Konten hinzufügen, ändern oder löschen?",
+            "a": "Ja! Du kannst deine Konten jederzeit verwalten, indem du das Seitenmenü (Drawer) öffnest und auf „Konten“ tippst. Hinweis: Ein Konto kann nicht gelöscht werden, wenn es noch mit Transaktionen verknüpft ist. Du musst diese Transaktionen zuerst einem anderen Konto zuweisen oder löschen."
+          },
+          {
+            "q": "Wie lege ich meinen Startkontostand fest?",
+            "a": "Wenn du ein neues Konto erstellst, wirst du im Onboarding-Prozess nach dem Anfangssaldo gefragt. Wenn du diesen später ändern möchtest, gehe einfach ins Menü auf „Konten“ und bearbeite dort den Startwert."
+          },
+          {
+            "q": "Kann ich Geld zwischen zwei Konten umbuchen?",
+            "a": "Noch nicht direkt, aber diese Funktion wird derzeit entwickelt und folgt bald. In der Zwischenzeit kannst du eine Ausgabe auf dem einen und eine Einnahme auf dem anderen Konto erstellen."
+          }
+        ]
+      },
+      "categories": {
+        "title": "Kategorien & Struktur",
+        "questions": [
+          {
+            "q": "Kann ich meine eigenen Kategorien ändern oder hinzufügen?",
+            "a": "Absolut. Öffne das Menü und tippe auf „Kategorien“. Dort kannst du Kategorien hinzufügen, umbenennen, Farben ändern und löschen, um sie deinem persönlichen Budget-Stil anzupassen."
+          },
+          {
+            "q": "Warum gibt es Unterkategorien und muss ich sie verwenden?",
+            "a": "Unterkategorien machen die Visualisierung deiner Ausgaben in Diagrammen einfacher, indem sie verwandte Ausgaben gruppieren (z. B. Lebensmittel und Restaurant unter der Hauptkategorie „Essen“). Du musst sie jedoch nicht nutzen! Die App unterstützt auch reine Hauptkategorien ohne Unterstruktur."
+          },
+          {
+            "q": "Warum kann ich eine Buchung nicht direkt in einer Hauptkategorie speichern?",
+            "a": "Um deine Analysen präzise zu halten, gilt bei Money Koi: Wenn eine Kategorie Unterkategorien hat, kannst du nicht direkt auf die Hauptkategorie buchen. Du musst eine der Unterkategorien wählen. Wenn du direkt auf die Hauptkategorie buchen möchtest, müssen zuerst alle zugehörigen Unterkategorien entfernt werden."
+          }
+        ]
+      },
+      "troubleshooting": {
+        "title": "Fehlerbehebung",
+        "questions": [
+          {
+            "q": "Meine Daten fehlen oder der Bildschirm ist leer. Was soll ich tun?",
+            "a": "Der einfachste Weg, ein lokales Datenproblem zu beheben, ist eine erneute Synchronisierung. Melde dich einfach aus der App ab und wieder an. Dadurch wird der lokale Cache geleert und deine aktuellen Daten werden sicher vom Server neu geladen."
+          },
+          {
+            "q": "Ich habe einen Login-Link angefordert, aber die E-Mail ist nicht angekommen.",
+            "a": "Bitte überprüfe deinen Spam- oder Junk-Ordner. Falls die E-Mail dort nicht zu finden ist, versuche es bitte erneut. Wenn du dauerhaft Probleme mit dem Login hast, kontaktiere bitte den Support."
+          },
+          {
+            "q": "Wie ändere ich die Sprache oder buche Daten in der Vergangenheit?",
+            "a": "Die App-Sprache richtet sich nach den lokalen Einstellungen deines Geräts. Um die Sprache zu ändern, passe bitte die Spracheinstellungen deines Smartphones an. Was das Datum betrifft: Du kannst beim Erstellen einer Transaktion jedes beliebige Datum in der Vergangenheit oder Zukunft wählen."
+          },
+          {
+            "q": "Ich habe einen Fehler gefunden. Wie melde ich ihn?",
+            "a": "Wir nutzen anonyme Fehlerverfolgung (Sentry), um Abstürze automatisch zu erfassen. Solltest du jedoch auf einen dauerhaften Fehler oder ein optisches Problem stoßen, sende bitte eine E-Mail an moneykoi.app{'@'}gmail.com mit einer kurzen Beschreibung des Problems."
+          }
+        ]
+      }
+    }
   }
 }

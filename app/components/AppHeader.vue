@@ -10,6 +10,7 @@
         <nav class="flex gap-8">
           <NuxtLink :to="localePath('/features')" class="transition hover:text-slate-900">{{ $t('header.features') }}</NuxtLink>
           <NuxtLink :to="localePath('/roadmap')" class="transition hover:text-slate-900">{{ $t('header.roadmap') }}</NuxtLink>
+          <NuxtLink :to="localePath('/faq')" class="transition hover:text-slate-900">{{ $t('header.faq') }}</NuxtLink>
           <NuxtLink :to="localePath('/contact')" class="transition hover:text-slate-900">{{ $t('header.contact') }}</NuxtLink>
         </nav>
 
@@ -55,6 +56,11 @@
               <li>
                 <NuxtLink class="block rounded-lg px-3 py-2 hover:bg-orange-50" to="/roadmap" @click="open = false">
                   {{ $t('header.roadmap') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink class="block rounded-lg px-3 py-2 hover:bg-orange-50" to="/faq" @click="open = false">
+                  {{ $t('header.faq') }}
                 </NuxtLink>
               </li>
               <li>

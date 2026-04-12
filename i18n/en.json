@@ -288,6 +288,7 @@
   "header": {
     "homeAriaLabel": "Go to home page",
     "features": "Features",
+    "faq": "FAQ",
     "roadmap": "Roadmap",
     "contact": "Contact",
     "menuAriaLabel": "Toggle menu"
@@ -547,6 +548,99 @@
     "footer": {
       "alphaNote": "Alpha/Beta Note: Money Koi is in an early stage of development. Features, interfaces, and integrations are subject to change.",
       "status": "Status: {date}"
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "FAQ & Support | Money Koi",
+      "description": "Get help with Money Koi. Answers about offline synchronization, accounts, categories, and troubleshooting."
+    },
+    "header": {
+      "eyebrow": "Support",
+      "title": "How can I help you?",
+      "subtitle": "Find answers to the most common questions about Money Koi's features, synchronization, and troubleshooting."
+    },
+    "sections": {
+      "troubleshooting": {
+        "title": "Troubleshooting",
+        "questions": [
+          {
+            "q": "My data is missing or my screen is empty. What should I do?",
+            "a": "The easiest way to fix a local data issue is to force a fresh sync. Simply log out of the app and log back in. This will clear the local cache and download your latest data safely from the server."
+          },
+          {
+            "q": "I requested a login link, but the email hasn't arrived.",
+            "a": "Please check your spam or junk folder. If it's not there, try requesting a new link. If you consistently have login issues, please contact support."
+          },
+          {
+            "q": "How do I change the language or log past dates?",
+            "a": "The app language is tied to your device's local settings. To change it, change your phone's language. For dates, you can freely select any date in the past or future when creating a transaction."
+          },
+          {
+            "q": "I found a bug. How do I report it?",
+            "a": "We use anonymous error tracking (Sentry) to catch crashes automatically. However, if you experience a persistent bug or visual issue, please send an email to moneykoi.app{'@'}gmail.com with a brief description of what happened."
+          }
+        ]
+      },
+      "categories": {
+        "title": "Categories & Structure",
+        "questions": [
+          {
+            "q": "Can I change or add my own categories?",
+            "a": "Absolutely. Open the Drawer and tap 'Categories'. From there, you can add, rename, change colors, and delete categories to fit your personal budgeting style."
+          },
+          {
+            "q": "Why are there subcategories, and do I have to use them?",
+            "a": "Subcategories make visualizing your spending much easier in graphs by grouping related expenses (e.g., Groceries and Restaurants under a main 'Food' category). However, you don't have to use them! The app fully supports main categories without any subcategories."
+          },
+          {
+            "q": "Why can't I save a transaction to a parent category?",
+            "a": "To keep your data analytics accurate, Money Koi enforces a rule: if a category has subcategories, you cannot book a transaction directly to the parent category. You must select one of its subcategories. If you want to book to the parent, you must remove its subcategories first."
+          }
+        ]
+      },
+      "accounts": {
+        "title": "Accounts & Balances",
+        "questions": [
+          {
+            "q": "Why do I need to use accounts?",
+            "a": "Accounts (like Cash, Bank, Savings, or Credit Card) help you summarize your bookings regardless of their category. It gives you a clear overview of exactly where your money physically is, matching your real-world balances."
+          },
+          {
+            "q": "Can I add, change, or delete accounts?",
+            "a": "Yes! You can freely manage your accounts by opening the side Drawer and tapping on 'Accounts'. Note: You cannot delete an account if it is currently linked to any transactions. You must reassign or delete those transactions first."
+          },
+          {
+            "q": "How do I set my initial starting balance?",
+            "a": "When you create a new account, the onboarding process will ask for an initial balance. If you need to change this later, simply go to the Drawer, tap 'Accounts', and edit the starting balance there."
+          },
+          {
+            "q": "Can I transfer money between two accounts?",
+            "a": "Not yet, but this feature is actively being built and is coming soon. For now, you will need to create an expense in one account and an income in the other."
+          }
+        ]
+      },
+      "sync": {
+        "title": "Sync, Offline & Data",
+        "questions": [
+          {
+            "q": "How does offline synchronization work?",
+            "a": "Money Koi is designed as an 'offline-first' app. Your data is saved locally on your device in a secure database (SQLite) so you can enter transactions instantly, even without internet. The app automatically syncs in the background when you open it or when changes happen on the server. You can see a small sync bar at the bottom of the screen indicating network activity."
+          },
+          {
+            "q": "What happens if I edit data on two offline devices at the same time?",
+            "a": "If you edit the same transaction on two different devices while offline, Money Koi uses a 'last edit wins' rule. When both devices reconnect to the internet, the most recent change will overwrite the older one."
+          },
+          {
+            "q": "Is my financial data secure and encrypted?",
+            "a": "Yes. Your authentication data is stored in your device's secure storage (Keychain/KeyStore). When your data syncs to our Supabase servers, it is encrypted during transit. Currently, the app downloads your entire history to your device for offline use."
+          },
+          {
+            "q": "I accidentally deleted a transaction. Can I undo it?",
+            "a": "No, there is currently no 'Undo' or Trash folder. When you delete a transaction or category, it is soft-deleted on our servers for system integrity, but it is permanently gone from your view. Please be careful when deleting entries."
+          }
+        ]
+      }
     }
   }
 }
