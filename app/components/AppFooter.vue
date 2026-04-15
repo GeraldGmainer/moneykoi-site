@@ -2,20 +2,33 @@
   <footer class="border-t border-orange-100 bg-[#FFF7F0]">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3">
       <div class="flex flex-col items-center gap-3 text-xs text-slate-500 sm:flex-row sm:justify-between">
+
         <nav class="order-1 lg:order-2 w-full sm:w-auto">
-          <ul class="flex flex-wrap justify-center gap-x-6 gap-y-4">
+          <ul class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4">
+            <li class="flex items-center gap-2 border-r border-orange-200 pr-6 py-4 lg:py-0">
+              <button @click="setLocale('de')"
+                :class="locale === 'de' ? 'text-slate-900 font-bold' : 'hover:text-slate-800 transition-colors'">
+                DE
+              </button>
+              <span class="text-orange-200">|</span>
+              <button @click="setLocale('en')"
+                :class="locale === 'en' ? 'text-slate-900 font-bold' : 'hover:text-slate-800 transition-colors'">
+                EN
+              </button>
+            </li>
+
             <li class="py-4 lg:py-0">
-              <NuxtLink :to="localePath('/legal/terms')" class="hover:text-slate-800">
+              <NuxtLink :to="localePath('/legal/terms')" class="hover:text-slate-800 transition-colors">
                 {{ $t('footer.terms') }}
               </NuxtLink>
             </li>
             <li class="py-4 lg:py-0">
-              <NuxtLink :to="localePath('/legal/imprint')" class="hover:text-slate-800">
+              <NuxtLink :to="localePath('/legal/imprint')" class="hover:text-slate-800 transition-colors">
                 {{ $t('footer.imprint') }}
               </NuxtLink>
             </li>
             <li class="py-4 lg:py-0">
-              <NuxtLink :to="localePath('/legal/privacy')" class="hover:text-slate-800">
+              <NuxtLink :to="localePath('/legal/privacy')" class="hover:text-slate-800 transition-colors">
                 {{ $t('footer.privacy') }}
               </NuxtLink>
             </li>
@@ -32,4 +45,5 @@
 
 <script lang="ts" setup>
 const localePath = useLocalePath()
+const { locale, setLocale } = useI18n()
 </script>

@@ -291,7 +291,8 @@
     "faq": "FAQ",
     "roadmap": "Roadmap",
     "contact": "Contact",
-    "menuAriaLabel": "Toggle menu"
+    "menuAriaLabel": "Toggle menu",
+    "goToApp": "Go to App"
   },
   "templateMenu": {
     "starter": "Starter",

@@ -274,9 +274,11 @@
   "header": {
     "homeAriaLabel": "Zur Startseite",
     "features": "Funktionen",
+    "faq": "FAQ",
     "roadmap": "Roadmap",
     "contact": "Kontakt",
-    "menuAriaLabel": "Menü öffnen"
+    "menuAriaLabel": "Menü öffnen",
+    "goToApp": "Zur App"
   },
   "templateMenu": {
     "starter": "Starter",
