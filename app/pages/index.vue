@@ -25,13 +25,16 @@
           </p>
 
           <div class="hidden lg:flex mt-7 gap-3" data-reveal>
-            <button
-                class="inline-flex items-center justify-center rounded-full bg-[#FF6F3D] px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-orange-200/70 transition hover:-translate-y-0.5 hover:shadow-lg active:translate-y-px disabled:opacity-70"
-                disabled>
+            <a
+                class="inline-flex items-center justify-center rounded-full bg-[#FF6F3D] px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-orange-200/70 transition hover:-translate-y-0.5 hover:shadow-lg active:translate-y-px"
+                href="https://play.google.com/store/apps/details?id=com.psyren.moneykoi"
+                rel="noopener noreferrer"
+                target="_blank"
+            >
               <Icon class="mr-2 h-4 w-4" name="simple-icons:googleplay"/>
               {{ $t('home.hero.googlePlay') }}
-              <span class="ml-2 text-xs opacity-80">{{ $t('home.hero.comingSoon') }}</span>
-            </button>
+            </a>
+
             <button :aria-label="`${$t('home.hero.appStore')} ${$t('home.hero.comingSoon')}`"
                     class="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-slate-300/60 transition hover:-translate-y-0.5 hover:shadow-lg active:translate-y-px disabled:opacity-70"
                     disabled>
