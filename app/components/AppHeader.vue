@@ -12,6 +12,7 @@
           <NuxtLink :to="localePath('/roadmap')" class="transition hover:text-slate-900">{{ $t('header.roadmap') }}</NuxtLink>
           <NuxtLink :to="localePath('/faq')" class="transition hover:text-slate-900">{{ $t('header.faq') }}</NuxtLink>
           <NuxtLink :to="localePath('/contact')" class="transition hover:text-slate-900">{{ $t('header.contact') }}</NuxtLink>
+          <UButton to="https://my.moneykoi.app"  label="Go to App"   external  />
         </nav>
 
         <div class="flex items-center gap-2 border-l border-slate-200 pl-8">
